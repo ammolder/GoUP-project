@@ -25,6 +25,24 @@
   background-position: center;
 }
 
+:root {
+  --primari-white-color: #ffffff;
+  --accent-text-color: #d41443;
+  --primary-text-color: #ffffff;
+  --secondary-text-color: #ffa5ba;
+  --extra-text-color: #907e82;
+  --text-color: #000000;
+  --bg-hero: #ffb8ca;
+  --bg-circle: #ffa5ba;
+  --bg-second: #fff5f6;
+  --bg-comment: #fff5f6;
+  --bg-menu: #e17992;
+  --bg-menu-content: #e18298;
+  --btn-hover: #f0f0f0;
+  --btn-hover-accent: #c7133e;
+  --timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
 p,
 h1,
 h2,
