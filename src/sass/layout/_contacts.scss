@@ -1,0 +1,71 @@
+.contact {
+  //   background-image: linear-gradient(
+  //     to bottom,
+  //     #ffffff 15%,
+  //     #ffa5ba 15%,
+  //     #ffa5ba 100%
+  //   );
+  //   background: linear-gradient(
+  //     180deg,
+  //     rgba(255, 255, 255, 1) 0%,
+  //     rgba(255, 214, 224, 1) 24%,
+  //     rgba(255, 214, 224, 1) 100%
+  //   );
+}
+
+.card--item {
+  //   background-color: var(--primari-white-color);
+}
+
+.card--location-text {
+  color: var(--primary-text-color);
+  background-color: #f0d1a5;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 1.87;
+  letter-spacing: 0.04em;
+  text-align: center;
+  width: 75.1px;
+  height: 28px;
+}
+
+.card--location-text__two {
+  background-color: #c2e297;
+}
+
+.card--city-text {
+  color: var(--text-color);
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.87;
+  letter-spacing: 0.04em;
+}
+
+.card--text {
+  color: var(--extra-text-color);
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.81;
+}
+
+.schedule--data-text {
+  color: var(--text-color);
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.87;
+  letter-spacing: 0.04em;
+}
+
+.schedule--time-text {
+  color: var(--secondary-text-color);
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.87;
+}
+
+.connect--link {
+  color: var(--extra-text-color);
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.81;
+}
