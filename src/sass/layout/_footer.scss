@@ -11,6 +11,9 @@ padding: 20px 20px 20px 20px;
 }
 .page-footer_logo{
     width: 234px;
+    @media (min-width: $tablet) {
+        width: 340px;
+    }
 }
 .page-footer__text{
     text-decoration: none;
@@ -21,6 +24,16 @@ font-size: 18px;
 line-height: 0.85;
 text-transform: uppercase;
 color: var(--secondary-text-color);
+@media (min-width: $tablet) {
+    font-size: 26px;
+    line-height: 0.86;
+    letter-spacing: 0.04em;
+}
+@media (min-width: $desktop) {
+    font-size: 30px;
+line-height: 0.88;
+letter-spacing: 0.04em;
+}
 }
 .page-footer__text-next1{
     font-size: 34px;
@@ -28,6 +41,16 @@ line-height: 0.87;
 letter-spacing: 0.04em;
 color: var(--accent-text-color);
 margin-top: 15px;
+@media (min-width: $tablet) {
+font-size: 48px;
+line-height: 0.87;
+letter-spacing: 0.06em;
+}
+@media (min-width: $desktop) {
+    font-size: 58px;
+    line-height: 0.87;
+    letter-spacing: 0.06em;
+}
 }
 .page-footer__text-next{
     font-size: 34px;
@@ -35,6 +58,16 @@ line-height: 0.87;
 letter-spacing: 0.04em;
 color: var(--accent-text-color);
 margin-top: 7.5px;
+@media (min-width: $tablet) {
+    font-size: 48px;
+    line-height: 0.87;
+    letter-spacing: 0.06em;
+    }
+    @media (min-width: $desktop) {
+        font-size: 58px;
+        line-height: 0.87;
+        letter-spacing: 0.06em;
+    }
 }
 footer .item-icon{
     width: 32px;
@@ -46,6 +79,10 @@ footer .item-icon{
 .page-footer_social{
     margin-top: 40px;
     margin-bottom: 40px;
+    @media (min-width: $tablet) {
+        margin-top: 0;
+        height: 100%;
+    }
 }
 footer .item-icon a {
     width: 100%;
@@ -79,6 +116,11 @@ footer .item-icon a {
         font-family: 'DM Sans';
         text-align: right;
         margin-bottom: 40px;
+        width: 268px;
+        margin-left: auto;
+        @media (min-width: $desktop) {
+            width: 320px;
+        }
     }
     .footer__tel{
         text-decoration: none;
@@ -86,6 +128,12 @@ footer .item-icon a {
         font-size: 12px;
         line-height: 186%;
         color: var(--text-color);
+        @media (min-width: $tablet) {
+            font-size: 14px;
+        }
+        @media (min-width: $desktop) {
+            font-size: 16px;
+        }
     }
     .tel{
         color: var(--accent-text-color);
@@ -112,4 +160,9 @@ padding-right: 0;
             background: #E1E1E1;;
           }
     }
-
+.page-footer_tablet{
+    @media (min-width: $tablet) {
+    display: flex;
+    justify-content: space-between;
+}
+}
