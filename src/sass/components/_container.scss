@@ -5,11 +5,12 @@
 
   @media screen and (min-width: $mobile) {
     width: $mobile;
-    padding-left: 32px;
-  padding-right: 32px;
+    
   }
   @media screen and (min-width: $tablet) {
     width: $tablet;
+    padding-left: 32px;
+  padding-right: 32px;
   }
   @media screen and (min-width: $desktop) {
     width: $desktop;
