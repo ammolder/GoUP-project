@@ -1,5 +1,9 @@
 .section-bgc {
   background-color: #fff5f6;
+  background-image: url(/src/images/about/bg-milk-mob-left.png),
+    url(/src/images/about/bg-milk-mob-right.png);
+  background-repeat: no-repeat;
+  background-position: left bottom 150px, right bottom 150px;
 }
 .about__text-label {
   font-family: 'Titan One';
