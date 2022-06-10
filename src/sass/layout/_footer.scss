@@ -1,15 +1,17 @@
 .page-footer{
     background-color: var(--bg-second);
-    @media (min-width: $tablet) {
- display: flex;
- 
-    }
+
 }
 
 footer .container{
 padding: 20px 20px 20px 20px;
+@media (min-width: $tablet) {
+    padding: 0px 18px 8px 18px;
 }
-
+}
+.page-footer_logo{
+    width: 234px;
+}
 .page-footer__text{
     text-decoration: none;
     font-family: 'Titan One';
@@ -20,7 +22,13 @@ line-height: 0.85;
 text-transform: uppercase;
 color: var(--secondary-text-color);
 }
-
+.page-footer__text-next1{
+    font-size: 34px;
+line-height: 0.87;
+letter-spacing: 0.04em;
+color: var(--accent-text-color);
+margin-top: 15px;
+}
 .page-footer__text-next{
     font-size: 34px;
 line-height: 0.87;
@@ -54,7 +62,6 @@ footer .item-icon a {
         border-color: var(--btn-hover-accent);
         background-color: var(--btn-hover-accent);
     }
-    
     &:focus {
         border-color: var(--btn-hover-accent);
         background-color: var(--btn-hover-accent);
