@@ -12,3 +12,45 @@
   text-transform: uppercase;
   color: var(--secondary-text-color);
 }
+.about__title {
+  margin-top: 15px;
+  font-family: 'Titan One';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 34px;
+  line-height: 1.14;
+  text-align: center;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  color: var(--accent-text-color);
+}
+.about__text-circle {
+  margin-top: 40px;
+  font-family: 'DM Sans';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 1.62;
+  color: var(--text-color);
+}
+.about__text-second {
+  margin-top: 40px;
+  font-family: 'DM Sans';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 1.62;
+  color: var(--extra-text-color);
+}
+.about__img {
+  margin-top: 32px;
+}
+.about__btn {
+  margin-top: 20px;
+}
+.about__icon {
+  margin-left: 14px;
+}
+.margin {
+  margin-top: 13px;
+}
