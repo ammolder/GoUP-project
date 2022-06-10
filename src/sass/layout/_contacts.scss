@@ -20,7 +20,7 @@
   }
 }
 
-.card--item {
+.card__item {
   background-color: var(--primari-white-color);
   box-shadow: 0px 8px 30px rgba(212, 20, 67, 0.1);
   border-radius: 24px;
@@ -57,7 +57,7 @@
   }
 }
 
-.card--location-text {
+.card__location {
   color: var(--primary-text-color);
   background-color: #f0d1a5;
   font-size: 16px;
@@ -70,11 +70,11 @@
   margin-bottom: 20px;
 }
 
-.card--location-text__two {
+.card__location--background {
   background-color: #c2e297;
 }
 
-.card--city-text {
+.card__city-text {
   color: var(--text-color);
   font-weight: 500;
   font-size: 16px;
@@ -83,7 +83,7 @@
   margin-bottom: 8px;
 }
 
-.card--text {
+.card__text {
   color: var(--extra-text-color);
   font-weight: 500;
   font-size: 16px;
@@ -107,20 +107,7 @@
   }
 }
 
-.schedule--data-text {
-  color: var(--text-color);
-  font-weight: 500;
-  font-size: 16px;
-  line-height: 1.87;
-  letter-spacing: 0.04em;
-}
-
-.schedule--time-text {
-  color: var(--secondary-text-color);
-  font-weight: 500;
-  font-size: 16px;
-  line-height: 1.87;
-
+.schedule__item {
   &:first-child {
     margin-bottom: 8px;
   }
@@ -129,7 +116,22 @@
   }
 }
 
-.connect--link {
+.schedule__data-text {
+  color: var(--text-color);
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.87;
+  letter-spacing: 0.04em;
+}
+
+.schedule__time-text {
+  color: var(--secondary-text-color);
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.87;
+}
+
+.connect__link {
   color: var(--extra-text-color);
   font-weight: 500;
   font-size: 16px;
@@ -151,11 +153,11 @@
   // }
 }
 
-.contact-button--btn {
+.contact-button__btn {
   border-radius: 22px;
   height: 44px;
 }
-.contact-button--btn__first {
+.contact-button__btn--first {
   @media screen and (max-width: $max-mob) {
     margin-bottom: 10px;
     width: 161px;
@@ -172,7 +174,7 @@
   }
 }
 
-.contact-button--btn__second {
+.contact-button__btn--second {
   @media screen and (max-width: $max-mob) {
     width: 161px;
   }
