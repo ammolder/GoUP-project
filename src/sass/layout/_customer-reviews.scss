@@ -12,8 +12,7 @@
   height: 308px;
   width: 280px;
   background-color: #fafafa;
-  //   padding-right: 50px;
-  //   padding-left: 50px;
+
   margin: 0 auto;
 
   font-family: $base-font;
@@ -23,8 +22,22 @@
   line-height: 3.1;
 
   text-align: center;
-
   color: var(--text-color);
+  background: repeating-linear-gradient(
+    #9198e5 20px,
+    #9198e5 25px
+  );
+
+  @media screen and(min-width:$tablet) {
+    height: 164px;
+    width: 620px;
+    font-size: 14px;
+  }
+  @media screen and(min-width:$desktop) {
+    height: 138px;
+    width: 1034px;
+    font-size: 16px;
+  }
 }
 
 .customer-review__text::before {
@@ -48,6 +61,11 @@
   text-align: center;
 
   color: var(--text-color);
-}
-.customer-name__text::before {
+
+  @media screen and(min-width:$tablet) {
+    font-size: 16px;
+  }
+  @media screen and(min-width:$desktop) {
+    font-size: 20px;
+  }
 }
