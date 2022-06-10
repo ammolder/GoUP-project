@@ -1,0 +1,56 @@
+// delete  customer-rewiew mb 30px after making slide
+.customer-review {
+  margin-bottom: 30px;
+}
+
+.customer-review__photo {
+  display: block;
+  margin: 0 auto;
+  margin-bottom: 32px;
+}
+.customer-review__text {
+  height: 308px;
+  width: 280px;
+  background-color: #fafafa;
+  //   padding-right: 50px;
+  //   padding-left: 50px;
+  margin: 0 auto;
+
+  font-family: $base-font;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 3.1;
+
+  text-align: center;
+
+  color: var(--text-color);
+}
+
+.customer-review__text::before {
+  content: '';
+  display: inline-block;
+  width: 54px;
+  height: 40px;
+  color: #e1e1e1;
+  background-image: url(/src/images/quotes/quotes.png);
+  top: 0;
+}
+
+.customer-name__text {
+  margin-top: 16px;
+  font-family: $base-font;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 2.6;
+
+  text-align: center;
+
+  color: var(--text-color);
+}
+.customer-name__text::before {
+  content: '.  .  .';
+  width: 32px;
+  height: 4px;
+}
