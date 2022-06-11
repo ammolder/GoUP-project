@@ -31,9 +31,10 @@
     </nav>
 
     <button class="header__btn" type="button">
-      <svg width="20" height="18" aria-label="Mobile menu switch">
+      <span class="header__burger" aria-label="Mobile menu switch"></span>
+      <!-- <svg width="20" height="18" aria-label="Mobile menu switch">
         <use href="/src/images/sprite.svg#burger"></use>
-      </svg>
+      </svg> -->
     </button>
     <button class="header-model__btn btn-fix" type="button">
       Buy now
@@ -41,6 +42,41 @@
         <use href="/src/images/sprite.svg#right-arrow"></use>
       </svg>
     </button>
+  </div>
+  <div class="header-mobile">
+    <!-- <button class="header__btn" type="button">
+      <svg width="20" height="18" aria-label="Mobile menu switch">
+        <use href="/src/images/sprite.svg#burger"></use>
+      </svg>
+    </button> -->
+    <button
+      class="header-model__btn header-model__btn--fix btn-fix"
+      type="button"
+    >
+      Buy now
+      <svg class="header-model__icon" width="10" height="15">
+        <use href="/src/images/sprite.svg#right-arrow"></use>
+      </svg>
+    </button>
+    <nav class="mobile-nav">
+      <ul class="mobile-list">
+        <li class="mobile-list__item">
+          <a class="mobile-list__link" href="#">Home</a>
+        </li>
+        <li class="mobile-list__item">
+          <a class="mobile-list__link" href="#">About us</a>
+        </li>
+        <li class="mobile-list__item">
+          <a class="mobile-list__link" href="#">How it’s made?</a>
+        </li>
+        <li class="mobile-list__item">
+          <a class="mobile-list__link" href="#">Our products</a>
+        </li>
+        <li class="mobile-list__item">
+          <a class="mobile-list__link" href="#">Contact</a>
+        </li>
+      </ul>
+    </nav>
   </div>
 </header>
 <section class="hero">
