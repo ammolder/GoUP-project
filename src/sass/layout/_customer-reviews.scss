@@ -23,11 +23,9 @@
 
   text-align: center;
   color: var(--text-color);
-  background: repeating-linear-gradient(
-    to right,
-    #9198e5 20px,
-    #9198e5 25px
-  );
+
+  // background-image: repeating-linear-gradient(to bottom red, blue);
+  // background: repeating-linear-gradient(to right, #9198e5 20px, #9198e5 25px);
 
   @media screen and(min-width:$tablet) {
     height: 164px;
@@ -40,6 +38,12 @@
     font-size: 16px;
   }
 }
+.customer-review__words {
+  background-image: repeating-linear-gradient(90deg, #fafafa, #e1e1e1);
+  background-repeat: repeat-x;
+  background-size: 100% 1px;
+  background-position: left bottom;
+}
 
 .customer-review__text::before {
   content: '';
@@ -47,7 +51,7 @@
   width: 54px;
   height: 40px;
   color: #e1e1e1;
-  background-image: url(/src/images/quotes/quotes.png);
+  // background-image: url(/src/images/quotes/quotes.png);
   top: 0;
 }
 
