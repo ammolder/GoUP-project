@@ -1,17 +1,17 @@
-// .contact {
-//   //   background-image: linear-gradient(
-//   //     to bottom,
-//   //     #ffffff 15%,
-//   //     #ffa5ba 15%,
-//   //     #ffa5ba 100%
-//   //   );
-//   //   background: linear-gradient(
-//   //     180deg,
-//   //     rgba(255, 255, 255, 1) 0%,
-//   //     rgba(255, 214, 224, 1) 24%,
-//   //     rgba(255, 214, 224, 1) 100%
-//   //   );
-// }
+.section--mob {
+  @media screen and (max-width: $max-mob) {
+    padding-bottom: 48px;
+  }
+}
+
+.contact {
+  background-image: linear-gradient(
+    to bottom,
+    #ffffff 20%,
+    #fff5f6 20%,
+    #fff5f6 100%
+  );
+}
 .card {
   @media screen and (min-width: $tablet) {
     display: grid;
@@ -28,17 +28,20 @@
   margin-bottom: 20px;
 
   @media screen and (min-width: 320px) and (max-width: 479px) {
-    margin-left: 10px;
-    margin-right: 10px;
-  }
-
-  @media screen and (min-width: $mobile) and (max-width: $max-mob) {
     width: 280px;
     margin-left: auto;
     margin-right: auto;
   }
 
+  @media screen and (min-width: $mobile) and (max-width: $max-mob) {
+    //  Я придумав цю ширину , щоб 480-769px картка була трохи більша
+    width: 350px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
   @media screen and (min-width: $tablet) and (max-width: $max-tab) {
+    width: 280px;
     &:first-child {
       margin-left: 18px;
     }
@@ -48,6 +51,7 @@
   }
 
   @media screen and (min-width: $desktop) {
+    width: 395px;
     &:first-child {
       margin-left: 16px;
     }
@@ -60,7 +64,7 @@
 .card__location {
   color: var(--primary-text-color);
   background-color: #f0d1a5;
-  font-size: 16px;
+  font-size: $font-primary;
   font-weight: 500;
   line-height: 1.87;
   letter-spacing: 0.04em;
@@ -75,35 +79,50 @@
 }
 
 .card__city-text {
+  position: relative;
   color: var(--text-color);
   font-weight: 500;
-  font-size: 16px;
+  font-size: $font-primary;
   line-height: 1.87;
   letter-spacing: 0.04em;
   margin-bottom: 8px;
+
+  &::after {
+    content: '';
+    position: absolute;
+    display: block;
+    width: 100%;
+    bottom: -88px;
+    border: 1px solid #e1e1e1;
+
+    @media screen and (min-width: $tablet) and (max-width: $max-tab) {
+      bottom: -113px;
+    }
+  }
 }
 
 .card__text {
   color: var(--extra-text-color);
   font-weight: 500;
-  font-size: 16px;
+  font-size: $font-primary;
   line-height: 1.81;
-  margin-bottom: 24px;
+  margin-bottom: 48px;
 
-  @media screen and (min-width: 320px) and (max-width: 479px) {
+  @media screen and (min-width: 320px) and (max-width: $max-mob) {
     width: 240px;
   }
 
-  @media screen and (min-width: $mobile) and (max-width: $max-mob) {
-    width: 179px;
-  }
-
   @media screen and (min-width: $tablet) and (max-width: $max-tab) {
-    width: 159px;
+    width: 158px;
   }
 
   @media screen and (min-width: $desktop) {
     width: 243px;
+  }
+}
+.schedule {
+  @media screen and (min-width: 320px) and (max-width: 479px) {
+    width: 240px;
   }
 }
 
@@ -112,14 +131,23 @@
     margin-bottom: 8px;
   }
   &:last-child {
-    margin-bottom: 24px;
+    margin-bottom: 48px;
+    position: relative;
+  }
+  &:last-child::after {
+    content: '';
+    position: absolute;
+    display: block;
+    width: 100%;
+    bottom: -25px;
+    border: 1px solid #e1e1e1;
   }
 }
 
 .schedule__data-text {
   color: var(--text-color);
   font-weight: 500;
-  font-size: 16px;
+  font-size: $font-primary;
   line-height: 1.87;
   letter-spacing: 0.04em;
 }
@@ -127,15 +155,21 @@
 .schedule__time-text {
   color: var(--secondary-text-color);
   font-weight: 500;
-  font-size: 16px;
+  font-size: $font-primary;
   line-height: 1.87;
 }
 
 .connect__link {
   color: var(--extra-text-color);
   font-weight: 500;
-  font-size: 16px;
+  font-size: $font-primary;
   line-height: 1.81;
+
+  &:hover,
+  &:focus,
+  &:active {
+    color: var(--secondary-text-color);
+  }
 }
 
 .contact-button {
@@ -145,19 +179,21 @@
     margin-left: auto;
     margin-right: auto;
   }
-
-  // @media screen and (max-width: $tablet) {
-  //   display: flex;
-  //   margin-left: auto;
-  //   margin-right: auto;
-  // }
+  @media screen and (min-width: $tablet) {
+    display: flex;
+    justify-content: center;
+  }
 }
 
-.contact-button__btn {
-  border-radius: 22px;
-  height: 44px;
-}
 .contact-button__btn--first {
+  color: #ffffff;
+  background-color: #d41342;
+
+  &:hover,
+  &:focus {
+    background-color: #d41342;
+  }
+
   @media screen and (max-width: $max-mob) {
     margin-bottom: 10px;
     width: 161px;
