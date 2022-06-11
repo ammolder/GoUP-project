@@ -26,6 +26,9 @@ padding: 20px 20px 20px 20px;
     @media (min-width: $tablet) {
         width: 340px;
     }
+    @media (min-width: $desktop) {
+        width: 474px;
+    }
 }
 .page-footer__text{
     text-decoration: none;
@@ -120,21 +123,18 @@ footer .item-icon a {
         list-style: none;
         display: flex;
         justify-content: flex-end;
+        margin-bottom: 40px;
     }
        .item-icon:not(:last-child){
         margin-right: 28.24px;
     }
-    .footer_contacts{
+
+    .footer__tel{
+        display: block;
         font-family: 'DM Sans';
         text-align: right;
         margin-bottom: 40px;
-        width: 268px;
         margin-left: auto;
-        @media (min-width: $desktop) {
-            width: 320px;
-        }
-    }
-    .footer__tel{
         text-decoration: none;
         font-weight: 700;
         font-size: 12px;
