@@ -1,10 +1,14 @@
 @import './common';
-@import './utils/example';
 @import './utils/variables';
+@import './utils/body';
 @import './base/base-style';
 @import './components/container';
 @import './components/section';
-@import './components/button';
+@import './components/buttons';
+@import './components/backdrop';
+@import './components/modal-buy';
+@import './components/modal-location';
+@import './components/modal-franchise';
 @import './layout/hero';
 @import './layout/products';
 @import './layout/about';
