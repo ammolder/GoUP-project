@@ -1,0 +1,191 @@
+<div class="backdrop">
+  <div class="modal-buy">
+    <button type="button" class="modal-buy__btn-close">
+      <svg class="modal-buy__btn-close-icon">
+        <use href="/src/images/sprite.svg#close"></use>
+      </svg>
+    </button>
+    <h2 class="modal-buy__title">MAKE YOUR CHOICE</h2>
+    <form>
+      <div class="modal-buy__wrap modal-buy__wrap--center">
+        <input
+          class="modal-buy__input"
+          type="radio"
+          id="ice-cream"
+          name="type"
+          value="ice-cream"
+        />
+        <label
+          class="modal-buy__label modal-buy__label--product"
+          for="ice-cream"
+          >Ice cream</label
+        >
+        <input
+          class="modal-buy__input"
+          type="radio"
+          id="ice-coffee"
+          name="type"
+          value="ice-coffee"
+        />
+        <label
+          class="modal-buy__label modal-buy__label--product"
+          for="ice-coffee"
+          >Ice coffee</label
+        >
+        <input
+          class="modal-buy__input"
+          type="radio"
+          id="milkshake"
+          name="type"
+          value="milkshake"
+        />
+        <label
+          class="modal-buy__label modal-buy__label--product"
+          for="milkshake"
+          >Milkshake</label
+        >
+      </div>
+      <div class="modal-buy__wrap">
+        <p class="modal-buy__text">Size:</p>
+        <input
+          class="modal-buy__input"
+          type="radio"
+          id="small"
+          name="size"
+          value="small"
+        />
+        <label class="modal-buy__label" for="small">Small</label>
+        <input class="modal-buy__input" type="radio" id="medium" name="size"
+        value="medium"" />
+        <label class="modal-buy__label" for="medium">Medium</label>
+        <input
+          class="modal-buy__input"
+          type="radio"
+          id="large"
+          name="size"
+          value="large"
+        />
+        <label class="modal-buy__label" for="large">Large</label>
+      </div>
+      <div class="modal-buy__wrap">
+        <p class="modal-buy__text">Flavour:</p>
+        <select class="modal-buy__select" name="flavour" required>
+          <option value="" selected>Select a flavour</option>
+          <option value="Chocolate">Chocolate</option>
+          <option value="Vanilla">Vanilla</option>
+          <option value="Strawberry">Strawberry</option>
+          <option value="Mint">Mint</option>
+          <option value="Frutti Tutti">Frutti Tutti</option>
+          <option value="Pistachio">Pistachio</option>
+          <option value="Lemon">Lemon</option>
+          <option value="Mango">Mango</option>
+          <option value="Blue-moon">Blue Moon</option>
+          <option value="Bubblegum">Bubblegum</option>
+        </select>
+      </div>
+      <div class="modal-buy__wrap">
+        <p class="modal-buy__text">Topping:</p>
+        <input
+          class="modal-buy__input"
+          type="radio"
+          id="mint"
+          name="topping"
+          value="mint"
+        />
+        <label class="modal-buy__label" for="mint">Mint</label>
+        <input
+          class="modal-buy__input"
+          type="radio"
+          id="nutty"
+          name="topping"
+          value="nutty"
+        />
+        <label class="modal-buy__label" for="nutty">Nutty</label>
+        <input
+          class="modal-buy__input"
+          type="radio"
+          id="berry"
+          name="topping"
+          value="berry"
+        />
+        <label class="modal-buy__label" for="berry">Berry</label>
+
+        <input
+          class="modal-buy__input"
+          type="radio"
+          id="caramel"
+          name="topping"
+          value="caramel"
+        />
+        <label class="modal-buy__label" for="caramel">Caramel</label>
+        <input
+          class="modal-buy__input"
+          type="radio"
+          id="choco"
+          name="topping"
+          value="choco"
+        />
+        <label class="modal-buy__label" for="choco">Choco</label>
+        <input
+          class="modal-buy__input"
+          type="radio"
+          id="coconut"
+          name="topping"
+          value="coconut"
+        />
+        <label class="modal-buy__label" for="coconut">Coconut</label>
+        <input
+          class="modal-buy__input"
+          type="radio"
+          id="vanilla"
+          name="topping"
+          value="vanilla"
+        />
+        <label class="modal-buy__label" for="vanilla">Vanilla</label>
+      </div>
+      <div class="modal-buy__field">
+        <input
+          class="modal-buy__field-input"
+          type="text"
+          name="username"
+          placeholder="Name"
+          required
+        />
+        <input
+          class="modal-buy__field-input"
+          type="tel"
+          name="tel"
+          placeholder="Tel"
+          required
+        />
+        <input
+          class="modal-buy__field-input"
+          type="mail"
+          name="email"
+          placeholder="Email"
+          required
+        />
+      </div>
+      <textarea
+        name="comments"
+        id="comments"
+        class="modal-buy__comments"
+        placeholder="Leave your comments"
+      ></textarea>
+
+      <div class="modal-buy__checkbox-wrap">
+        <input
+          type="checkbox"
+          class="modal-buy__checkbox-input visually-hidden"
+          id="input-check"
+          name="confirmation-call"
+        />
+        <label class="modal-buy__checkbox-label" for="input-check">
+          <span class="modal-buy__checkbox-custom"> </span>
+          <span> Call me back for confirmation </span></label
+        >
+      </div>
+      <button type="submit" class="btn modal-buy__btn">Confirm order</button>
+    </form>
+  </div>
+</div>
