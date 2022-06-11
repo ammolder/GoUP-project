@@ -1,0 +1,174 @@
+<header class="header">
+  <div class="container header__container">
+    <a href="" class="header__logo">
+      <img
+        class="logo-img"
+        src="/src/images/header-hero/logo.png"
+        alt="Logo"
+        loading="lazy"
+        width="200"
+        height="50"
+      />
+    </a>
+    <nav class="nav">
+      <ul class="nav-list">
+        <li class="nav-list__item">
+          <a class="nav-list__link" href="#">Home</a>
+        </li>
+        <li class="nav-list__item">
+          <a class="nav-list__link" href="#">About us</a>
+        </li>
+        <li class="nav-list__item">
+          <a class="nav-list__link" href="#">How it’s made?</a>
+        </li>
+        <li class="nav-list__item">
+          <a class="nav-list__link" href="#">Our products</a>
+        </li>
+        <li class="nav-list__item">
+          <a class="nav-list__link" href="#">Contact</a>
+        </li>
+      </ul>
+    </nav>
+
+    <button class="header__btn" type="button">
+      <svg width="20" height="18" aria-label="Переключатель мобильного меню">
+        <use href="/src/images/sprite.svg#burger"></use>
+      </svg>
+    </button>
+    <button class="header-model__btn btn-fix" type="button">
+      Buy now
+      <svg class="header-model__icon" width="10" height="15">
+        <use href="/src/images/sprite.svg#right-arrow"></use>
+      </svg>
+    </button>
+  </div>
+</header>
+<section class="hero">
+  <div class="hero__container container">
+    <div class="hero__box1">
+      <h1 class="hero__title">
+        <span>ice cream</span><span> made with </span
+        ><span class="hero__color">passion</span>
+      </h1>
+
+      <ul class="hero-list list">
+        <li class="hero-list__item list">
+          <a class="hero-list__link hero-list__link--style1" href="#"
+            >Products</a
+          >
+        </li>
+        <li class="hero-list__item list">
+          <a class="hero-list__link hero-list__link--style2" href="#"
+            >How it’s made?</a
+          >
+        </li>
+      </ul>
+      <div class="hero-box3">
+        <picture>
+          <source
+            srcset="
+              /src/images/header-hero/hero-milk-desk-min.png    1x,
+              /src/images/header-hero/hero-milk-desk@2x-min.png 2x
+            "
+            type="image/png"
+            media="(min-width:1200px)"
+          />
+          <source
+            srcset="
+              /src/images/header-hero/hero-milk-tab-min.png    1x,
+              /src/images/header-hero/hero-milk-tab@2x-min.png 2x
+            "
+            type="image/png"
+            media="(min-width:768px)"
+          />
+
+          <img
+            class="hero-box3__img"
+            src="/src/images/header-hero/hero-milk-tab-min.png"
+            alt="Jug of milk"
+          />
+        </picture>
+        <div class="hero-box3__texbtn">
+          <p class="hero-box3__text">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+            eiusmod tempor incididunt ut labore et
+          </p>
+          <button class="hero-box3__btn" type="button">
+            <svg class="hero-box3__icon" width="15" height="10">
+              <use href="/src/images/sprite.svg#right-arrow-tale"></use>
+            </svg>
+          </button>
+        </div>
+      </div>
+    </div>
+
+    <div class="hero__box2">
+      <picture>
+        <source
+          srcset="
+            /src/images/header-hero/hero-icecream-desk-min.png    1x,
+            /src/images/header-hero/hero-icecream-desk@2x-min.png 2x
+          "
+          type="image/png"
+          media="(min-width:1200px)"
+        />
+        <source
+          srcset="
+            /src/images/header-hero/hero-icecream-tab-min.png    1x,
+            /src/images/header-hero/hero-icecream-tab@2x-min.png 2x
+          "
+          type="image/png"
+          media="(min-width:768px)"
+        />
+        <source
+          srcset="
+            /src/images/header-hero/hero-icecream-mob-min.png    1x,
+            /src/images/header-hero/hero-icecream-mob@2x-min.png 2x
+          "
+          type="image/png"
+          media="(max-width:767px)"
+        />
+
+        <img
+          class="hero__box2__img"
+          src="/src/images/header-hero/hero-icecream-tab-min.png"
+          alt="Ice cream close-up"
+        />
+      </picture>
+    </div>
+    <div class="hero-box4">
+      <p class="hero-box4__text">
+        <span class="hero-box4__span1">16</span
+        ><span class="hero-box4__span2">cafes</span>
+      </p>
+      <p class="hero-box4__text">
+        <span class="hero-box4__span1">23</span
+        ><span class="hero-box4__span2">food trucks</span>
+      </p>
+      <picture>
+        <source
+          srcset="
+            /src/images/header-hero/tasty-desk-min.png    1x,
+            /src/images/header-hero/tasty-desk@2x-min.png 2x
+          "
+          type="image/png"
+          media="(min-width:1200px)"
+        />
+        <source
+          srcset="
+            /src/images/header-hero/tasty-tab-min.png    1x,
+            /src/images/header-hero/tasty-tab@2x-min.png 2x
+          "
+          type="image/png"
+          media="(min-width:768px)"
+        />
+
+        <img
+          class="hero-box4__img"
+          src="/src/images/header-hero/tasty-tab-min.png"
+          alt="Girl eating ice cream"
+        />
+      </picture>
+    </div>
+  </div>
+</section>
