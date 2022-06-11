@@ -17,13 +17,12 @@
   --timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-// $primari-font: Roboto, sans-serif;
-// $secondary-font: Roboto, sans-serif;
-// $logo-font: Homemade Apple, serif;
+$base-font: DM Sans, sans-serif;
+$title-font: Titan One, sans-serif;
 
-// $font-title: 32px;
-// $font-paragraph: 20px;
-// $font-small: 18px;
+$font-primary: 16px;
+$font-second: 14px;
+
 
 $mobile: 480px;
 $max-mob: 767px;
@@ -39,4 +38,4 @@ $desktop: 1200px;
 // github
 // right-arrow
 // telegram
-// facebook1
+
