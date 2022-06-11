@@ -12,7 +12,29 @@
   @media screen and (min-width: $desktop) {
     padding-top: 37px;
   }
+
+  &__logo {
+    display: flex;
+    align-items: center;
+  }
 }
+.logo-img {
+  border-radius: 50%;
+  background-color: var(--accent-text-color);
+  padding: 2px;
+}
+
+.logo-img__text {
+  font-family: $title-font;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 32px;
+  text-transform: uppercase;
+  color: var(--accent-text-color);
+
+  margin-left: 5px;
+}
+
 .btn-fix {
   padding: 0;
 }
@@ -21,6 +43,7 @@
   align-items: center;
   position: relative;
 }
+
 .nav {
   display: none;
   @media screen and (min-width: $desktop) {
