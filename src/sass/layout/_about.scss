@@ -6,12 +6,24 @@
       url(/src/images/about/bg-milk-mob-right.png);
     background-repeat: no-repeat;
     background-position: left bottom 190px, right bottom 190px;
-  }
-  @media screen and (min-width: 1200px) {
-    background-image: url(/src/images/about/bg-milk-desk-left.png),
-      url(/src/images/about/bg-milk-desk-right.png);
-    background-repeat: no-repeat;
-    background-position: left bottom 13px, right bottom 25px;
+    @media screen and (min-device-pixel-ratio: 2),
+      screen and (min-resolution: 192dpi),
+      screen and (min-resolution: 2dppx) {
+      background-image: url(/src/images/about/bg-milk-mob-left@2x.png),
+        url(/src/images/about/bg-milk-mob-right@2x.png);
+    }
+    @media screen and (min-width: 1200px) {
+      background-image: url(/src/images/about/bg-milk-desk-left.png),
+        url(/src/images/about/bg-milk-desk-right.png);
+      background-repeat: no-repeat;
+      background-position: left bottom 13px, right bottom 25px;
+      @media screen and (min-device-pixel-ratio: 2),
+        screen and (min-resolution: 192dpi),
+        screen and (min-resolution: 2dppx) {
+        background-image: url(/src/images/about/bg-milk-desk-left@2x.png),
+          url(/src/images/about/bg-milk-desk-right@2x.png);
+      }
+    }
   }
 }
 .about__text-label {
@@ -62,7 +74,7 @@
   font-size: 12px;
   line-height: 1.62;
   color: var(--text-color);
-  @media screen and (max-width: 767px) {
+  @media screen and (max-width: 320px) {
     max-width: 220px;
     margin-top: 40px;
   }
@@ -84,7 +96,7 @@
   font-size: 12px;
   line-height: 1.62;
   color: var(--extra-text-color);
-  @media screen and (max-width: 767px) {
+  @media screen and (max-width: 320px) {
     max-width: 220px;
   }
   @media screen and (min-width: 768px) {
@@ -100,6 +112,8 @@
 }
 .about__img {
   margin-top: 32px;
+  margin-left: auto;
+  margin-right: auto;
   @media screen and (min-width: 768px) {
     margin-top: 40px;
   }
@@ -117,6 +131,10 @@
   }
   @media screen and (min-width: 768px) {
     margin-top: 40px;
+  }
+  @media screen and (max-width: 767px) {
+    font-size: 14px;
+    line-height: 18px;
   }
 }
 .about__icon {
