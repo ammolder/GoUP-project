@@ -39,10 +39,19 @@
   }
 }
 .customer-review__words {
-  background-image: repeating-linear-gradient(90deg, #fafafa, #e1e1e1);
+  display: inline;
+  background: linear-gradient(to right, #e1e1e1, #e1e1e1 100%);
+  background-position: 0 100%;
+  background-size: 180px 1px;
   background-repeat: repeat-x;
-  background-size: 100% 1px;
-  background-position: left bottom;
+
+  // display: inline;
+  // background-image: repeating-linear-gradient(#e1e1e1, #e1e1e1);
+  // background-repeat: no-repeat;
+  // background-size: 100% 1px;
+  // background-position: left bottom;
+  padding-right: 50px;
+  padding-left: 50px;
 }
 
 .customer-review__text::before {
