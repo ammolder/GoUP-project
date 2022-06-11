@@ -52,7 +52,7 @@
   }
 }
 
-.header__model--btn {
+.header-model__btn {
   font-family: $base-font;
   font-style: normal;
   font-weight: 700;
@@ -87,7 +87,7 @@
     margin-left: auto;
   }
 }
-.header__model--icon {
+.header-model__icon {
   margin-left: 12px;
   margin-bottom: -3px;
 }
@@ -108,7 +108,7 @@
 }
 .hero {
   background-color: var(--bg-hero);
-  overflow-y: hidden;
+  overflow: hidden;
 
   &__container {
     display: flex;
@@ -210,6 +210,20 @@
       font-size: 58px;
       line-height: calc(52 / 58);
     }
+  }
+}
+.hero__color {
+  font-size: 48px;
+  line-height: 96.5%;
+  color: var(--accent-text-color);
+
+  @media screen and (min-width: $tablet) {
+    font-size: 34px;
+    line-height: calc(31 / 34);
+  }
+  @media screen and (min-width: $desktop) {
+    font-size: 58px;
+    line-height: calc(52 / 58);
   }
 }
 .hero-list {
