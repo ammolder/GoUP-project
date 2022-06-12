@@ -32,9 +32,10 @@
             }
         
     @media screen and (min-width: $desktop) {
-        font-size: 58px;
-        line-height: 66px;
-        letter-spacing: 0.06em;   
+        font-size: 30px;
+        line-height: 34px;
+        text-align: center;
+        letter-spacing: 0.04em;
             }
 }
 
@@ -69,6 +70,7 @@
 
 .prod__list{
     display: grid;
+    grid-row-gap: 130px;
 
     @media screen and (min-width: $tablet) {
         grid-template-columns:224px 224px 224px;
@@ -84,7 +86,7 @@
 .prod__item{
     min-height: 490px;
     padding: 161px 40px 40px 40px;
-    margin-bottom: 130px;
+    // margin-bottom: 130px;
     border-radius: 24px;
     
 @media screen and(min-width:$tablet) {
@@ -281,6 +283,7 @@
 
 .prod__text{
     margin-bottom: 32px;
+    
 
     font-weight: 700;
     font-size: 14px;
@@ -321,7 +324,7 @@
 
 .prod__link:hover, .prod__link:focus{
     background-color: var(--btn-hover-accent);
-    fill: var(--primari-white-color)
+    fill: var(--primari-white-color);
+    transform: rotate(270deg) ;
+    
 }
-
-
