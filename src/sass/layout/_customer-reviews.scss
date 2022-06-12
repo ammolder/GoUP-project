@@ -15,14 +15,14 @@
   padding: 43px 58px 26px 60px;
   margin: 0 auto;
 
-  @media screen and(min-width:$tablet) {
-    width: 620px;
-    padding: 37px 55px 44px 51px;
-  }
-  @media screen and(min-width:$desktop) {
-    width: 1034px;
-    padding: 32px 107px 31px 105px;
-  }
+  // @media screen and(min-width:$tablet) {
+  //   width: 620px;
+  //   padding: 37px 55px 44px 51px;
+  // }
+  // @media screen and(min-width:$desktop) {
+  //   width: 1034px;
+  //   padding: 32px 107px 31px 105px;
+  // }
 }
 .customer-review__words::before {
   content: '';
@@ -54,12 +54,12 @@
   font-weight: 500;
   font-size: 12px;
   line-height: 3.1;
-  @media screen and(min-width:$tablet) {
-    font-size: 14px;
-  }
-  @media screen and(min-width:$desktop) {
-    font-size: 16px;
-  }
+  // @media screen and(min-width:$tablet) {
+  //   font-size: 14px;
+  // }
+  // @media screen and(min-width:$desktop) {
+  //   font-size: 16px;
+  // }
 
   text-align: center;
   color: var(--text-color);
@@ -79,12 +79,12 @@
 
   color: var(--text-color);
 
-  @media screen and(min-width:$tablet) {
-    font-size: 16px;
-  }
-  @media screen and(min-width:$desktop) {
-    font-size: 20px;
-  }
+  // @media screen and(min-width:$tablet) {
+  //   font-size: 16px;
+  // }
+  // @media screen and(min-width:$desktop) {
+  //   font-size: 20px;
+  // }
 }
 .circle-box__item {
   width: 4px;
@@ -93,16 +93,16 @@
   background-color: #c7133e;
   display: inline-block;
   margin-right: 10px;
-  &:last-child {
-    margin-right: 0;
-  }
+  // &:last-child {
+  //   margin-right: 0;
+  // }
 }
 .circle-box {
   text-align: center;
   margin-top: 16px;
   margin-bottom: 16px;
-  @media screen and(min-width:$tablet) {
-    margin-top: 4px;
-    margin-bottom: 16px;
-  }
+  // @media screen and(min-width:$tablet) {
+  //   margin-top: 4px;
+  //   margin-bottom: 16px;
+  // }
 }
