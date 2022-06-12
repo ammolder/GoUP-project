@@ -64,13 +64,13 @@
     @media screen and (min-width: $tablet) and (max-width: $max-tab) {
         grid-template-columns: 180px 162px 159px;
         grid-template-rows: 226px;
-        grid-row-gap: 0 22px;
+        grid-column-gap: 4px 22px;
     }
     
     @media screen and (min-width: $desktop) {
         grid-template-columns: 288px 317px 288px;
         grid-template-rows: 223px;
-        grid-row-gap: 142px 106px 123px;
+        grid-column-gap: 142px 106px;
     }
 }
 
