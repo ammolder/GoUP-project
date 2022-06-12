@@ -91,7 +91,16 @@ letter-spacing: 0.06em;
     height: 32px;
     border-radius: 50%;
     border-color: #FEA5BB;
-    background-color: #FEA5BB;;
+    background-color: #FEA5BB;
+    &:hover {
+        border-color: var(--btn-hover-accent);
+        background-color: var(--btn-hover-accent);
+    }
+    &:focus {
+        border-color: var(--btn-hover-accent);
+        background-color: var(--btn-hover-accent);
+    }
+  
 }
 
 
@@ -101,19 +110,11 @@ letter-spacing: 0.06em;
     display: flex;
     align-items: center;
     justify-content: center;
-    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-
-          &:hover {
-        border-color: var(--btn-hover-accent);
-        background-color: var(--btn-hover-accent);
-    }
-    &:focus {
-        border-color: var(--btn-hover-accent);
-        background-color: var(--btn-hover-accent);
-    }
-   fill: var(--primari-white-color);
-    transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1), border-radius 250ms cubic-bezier(0.4, 0, 0.2, 1), border-color 250ms cubic-bezier(0.4, 0, 0.2, 1), background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);  
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1); 
+    fill: var(--primari-white-color);
+    transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1), border-radius 250ms cubic-bezier(0.4, 0, 0.2, 1), border-color 250ms cubic-bezier(0.4, 0, 0.2, 1), background-color 250ms cubic-bezier(0.4, 0, 0.2, 1); 
 }
+
     
        .footer_item:not(:last-child){
         margin-right: 28.24px;
