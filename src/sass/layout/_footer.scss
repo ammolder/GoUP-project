@@ -28,7 +28,7 @@ padding: 20px 20px 20px 20px;
         width: 340px;
     }
     @media (min-width: $desktop) {
-        width: 474px;
+        width: 480px;
         margin-bottom: 0px;
     }
 }
@@ -57,7 +57,7 @@ letter-spacing: 0.04em;
 .footer-logo_second-title{
     font-family: 'Titan One';
     font-size: 34px;
-line-height: 0.87;
+line-height: 1.15;
 letter-spacing: 0.04em;
 color: var(--accent-text-color);
 margin-top: 15px;
@@ -68,8 +68,9 @@ letter-spacing: 0.06em;
 }
 @media (min-width: $desktop) {
     font-size: 58px;
-    line-height: 0.87;
+    line-height: 1.15;
     letter-spacing: 0.06em;
+    width: 474px;
 }
 }
 .footer_social{
@@ -170,7 +171,7 @@ padding-right: 0;
     @media (min-width: $desktop) {
     padding-top: 60px;
     padding-bottom: 60px;
-    margin-bottom: 40px;
+ 
     }
 }
 
