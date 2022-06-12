@@ -139,7 +139,8 @@ letter-spacing: 0.06em;
     }
     .footer_cooperative-text{
         font-family: 'DM Sans';
-        padding-top: 16px;
+        padding-top: 18px;
+        padding-bottom: 18px;
         font-size: 14px;
         font-weight: 700;
 line-height: 152%;
@@ -155,6 +156,9 @@ padding-right: 0;
        width: 150px;
        margin-left: auto;
        margin-right: auto;
+       @media (min-width: $tablet) {
+        width: 480px;
+    }
     }
 .footer-contact {
     @media (min-width: $tablet) {
