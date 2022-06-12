@@ -2,25 +2,25 @@
 .customer-review {
   margin-bottom: 30px;
 }
-
 .customer-review__photo {
   display: block;
   margin: 0 auto;
   margin-bottom: 32px;
 }
 .customer-review__text {
-  padding: 30px 50px 17px 50px;
   width: 280px;
   background-color: #fafafa;
-  margin: 0 auto;
+  text-align: center;
+  background-color: #fafafa;
+  padding: 30px 58px 26px 60px;
 
   @media screen and(min-width:$tablet) {
     width: 620px;
-    font-size: 14px;
+    padding: 37px 55px 44px 51px;
   }
   @media screen and(min-width:$desktop) {
     width: 1034px;
-    font-size: 16px;
+    padding: 32px 107px 31px 105px;
   }
 }
 .customer-review__words::before {
@@ -49,6 +49,13 @@
   font-weight: 500;
   font-size: 12px;
   line-height: 3.1;
+  @media screen and(min-width:$tablet) {
+    font-size: 14px;
+  }
+  @media screen and(min-width:$desktop) {
+    width: 1034px;
+    font-size: 16px;
+  }
 
   text-align: center;
   color: var(--text-color);
