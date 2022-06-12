@@ -53,7 +53,7 @@
 
   background-image: repeating-linear-gradient(#fafafa, #e1e1e1);
   background-repeat: no-repeat;
-  background-size: 100% 3px;
+  background-size: 100% 1px;
   background-position: bottom;
 }
 
@@ -77,7 +77,6 @@
   }
 }
 .customer-review__circle {
-  display: block;
   width: 4px;
   height: 4px;
   border-radius: 50%;
