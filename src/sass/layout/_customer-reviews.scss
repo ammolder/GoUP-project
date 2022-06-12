@@ -39,6 +39,10 @@
 }
 .customer-review__words {
   display: inline;
+  // background-repeat: no-repeat;
+  // background-position: left bottom 15px;
+  // background-size: 100% 12px;
+  // background-image: linear-gradient(to right, #fafafa, #e1e1e1);
 
   background-image: repeating-linear-gradient(#fafafa, #e1e1e1);
   background-repeat: no-repeat;
