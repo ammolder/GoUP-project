@@ -80,5 +80,13 @@
   width: 4px;
   height: 4px;
   border-radius: 50%;
-  color: red;
+  background-color: red;
+  display: inline-block;
+}
+.circle {
+  display: block;
+  margin: 0 auto;
+  &:not(:last-child) {
+    margin-right: 10px;
+  }
 }
