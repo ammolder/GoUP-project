@@ -1,4 +1,4 @@
-.page-footer{
+.footer{
     background-color: var(--bg-second);
     position: relative;
     &::after {
@@ -15,13 +15,13 @@
       }
     }
 }
-footer .container{
+.footer-container{
 padding: 20px 20px 20px 20px;
 @media (min-width: $tablet) {
     padding: 0px 18px 8px 18px;
 }
 }
-.page-footer_logo{
+.footer__logo{
     width: 234px;
     @media (min-width: $tablet) {
         width: 340px;
@@ -30,27 +30,30 @@ padding: 20px 20px 20px 20px;
         width: 474px;
     }
 }
-.page-footer__text{
-    text-decoration: none;
+.footer-logo__first-title{
+    display: block;
+    margin-bottom: 15px;
+    // text-decoration: none;
     font-family: 'Titan One';
 font-style: normal;
-    font-weight: 400;
+    // font-weight: 400;
 font-size: 18px;
-line-height: 0.85;
+line-height: 1.15;
 text-transform: uppercase;
 color: var(--secondary-text-color);
 @media (min-width: $tablet) {
     font-size: 26px;
-    line-height: 0.86;
+
     letter-spacing: 0.04em;
 }
 @media (min-width: $desktop) {
     font-size: 30px;
-line-height: 0.88;
+
 letter-spacing: 0.04em;
 }
 }
-.page-footer__text-next1{
+.footer-logo__second-title{
+    font-family: 'Titan One';
     font-size: 34px;
 line-height: 0.87;
 letter-spacing: 0.04em;
@@ -67,31 +70,7 @@ letter-spacing: 0.06em;
     letter-spacing: 0.06em;
 }
 }
-.page-footer__text-next{
-    font-size: 34px;
-line-height: 0.87;
-letter-spacing: 0.04em;
-color: var(--accent-text-color);
-margin-top: 7.5px;
-@media (min-width: $tablet) {
-    font-size: 48px;
-    line-height: 0.87;
-    letter-spacing: 0.06em;
-    }
-    @media (min-width: $desktop) {
-        font-size: 58px;
-        line-height: 0.87;
-        letter-spacing: 0.06em;
-    }
-}
-footer .item-icon{
-    width: 32px;
-    height: 32px;
-    border-radius: 50%;
-    border-color: #FEA5BB;
-    background-color: #FEA5BB;;
-}
-.page-footer_social{
+.footer__social{
     margin-top: 40px;
     margin-bottom: 40px;
     @media (min-width: $tablet) {
@@ -99,18 +78,30 @@ footer .item-icon{
         height: 100%;
     }
 }
-footer .item-icon a {
+.footer__list{
+    list-style: none;
+    display: flex;
+    justify-content: flex-end;
+    margin-bottom: 40px;
+}
+.footer__item {
+    width: 32px;
+    height: 32px;
+    border-radius: 50%;
+    border-color: #FEA5BB;
+    background-color: #FEA5BB;;
+}
+
+
+.footer__link {
     width: 100%;
     height: 100%;
     display: flex;
     align-items: center;
     justify-content: center;
     transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-    }
-    .footer-icon {
-        fill: var(--primari-white-color);
-        transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1), border-radius 250ms cubic-bezier(0.4, 0, 0.2, 1), border-color 250ms cubic-bezier(0.4, 0, 0.2, 1), background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);  
-    &:hover {
+
+          &:hover {
         border-color: var(--btn-hover-accent);
         background-color: var(--btn-hover-accent);
     }
@@ -119,17 +110,15 @@ footer .item-icon a {
         background-color: var(--btn-hover-accent);
     }
     }
-    .footer_list{
-        list-style: none;
-        display: flex;
-        justify-content: flex-end;
-        margin-bottom: 40px;
-    }
-       .item-icon:not(:last-child){
+    // fill: var(--primari-white-color);
+    //     transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1), border-radius 250ms cubic-bezier(0.4, 0, 0.2, 1), border-color 250ms cubic-bezier(0.4, 0, 0.2, 1), background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);  
+  
+    
+       .footer__item:not(:last-child){
         margin-right: 28.24px;
     }
 
-    .footer__tel{
+    .footer__contact{
         display: block;
         font-family: 'DM Sans';
         text-align: right;
@@ -147,10 +136,10 @@ footer .item-icon a {
             font-size: 16px;
         }
     }
-    .tel{
+    .footer__tel{
         color: var(--accent-text-color);
     }
-    .footer_end-text{
+    .footer__cooperative-text{
         font-family: 'DM Sans';
         padding-top: 16px;
         font-size: 14px;
@@ -164,11 +153,11 @@ padding-right: 0;
     padding-top: 8px;
 }
     }
-    .footer_end{
+    .footer__cooperative{
         padding-left: 70px;
         padding-right: 70px;
     }
-.page-footer_tablet{
+.footer_contact {
     @media (min-width: $tablet) {
     display: flex;
     justify-content: space-between;
@@ -178,3 +167,4 @@ padding-right: 0;
     padding-bottom: 60px;
     }
 }
+
