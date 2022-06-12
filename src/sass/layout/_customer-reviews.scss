@@ -19,12 +19,11 @@
     font-size: 14px;
   }
   @media screen and(min-width:$desktop) {
-    height: 138px;
     width: 1034px;
     font-size: 16px;
   }
 }
-.customer-review__text::before {
+.customer-review__words::before {
   content: '';
   display: inline-block;
   width: 54px;
@@ -32,7 +31,10 @@
   color: #e1e1e1;
 
   background-image: url(/src/images/quotes/quotes.png);
-  position: relative;
+  position: absolute;
+  z-index: -1;
+  top: -15px;
+  left: -30px;
 }
 .customer-review__words {
   display: inline;
@@ -50,7 +52,8 @@
 
   text-align: center;
   color: var(--text-color);
-  position: absolute;
+  position: relative;
+  z-index: 2;
 }
 
 .customer-name__text {
