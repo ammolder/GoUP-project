@@ -151,6 +151,12 @@ letter-spacing: 0.06em;
     }
     .footer__tel{
         color: var(--accent-text-color);
+        &:hover {
+            color: var(--btn-hover-accent);
+        }
+        &:focus {
+           color: var(--btn-hover-accent);
+        }
     }
     .footer__cooperative-text{
         font-family: 'DM Sans';
