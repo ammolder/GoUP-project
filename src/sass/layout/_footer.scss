@@ -94,7 +94,7 @@ letter-spacing: 0.06em;
     list-style: none;
     display: flex;
     justify-content: flex-end;
-    @media (min-width: 1199px){
+    @media (max-width: 1199px){
     margin-bottom: 40px;
     }
 }
