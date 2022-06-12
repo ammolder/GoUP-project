@@ -9,21 +9,11 @@
   margin-bottom: 32px;
 }
 .customer-review__text {
-  padding-left: 50px;
-  padding-right: 50px;
+  position: relative;
+  padding: 30px 50px 17px 50px;
   width: 280px;
   background-color: #fafafa;
-
   margin: 0 auto;
-
-  font-family: $base-font;
-  font-style: normal;
-  font-weight: 500;
-  font-size: 12px;
-  line-height: 3.1;
-
-  text-align: center;
-  color: var(--text-color);
 
   @media screen and(min-width:$tablet) {
     width: 620px;
@@ -41,20 +31,26 @@
   width: 54px;
   height: 40px;
   color: #e1e1e1;
+
   background-image: url(/src/images/quotes/quotes.png);
-  position: relative;
-  z-index: 0;
-  padding-top: 30px;
   position: absolute;
 }
 .customer-review__words {
-  position: relative;
   display: inline;
 
   background-image: repeating-linear-gradient(#fafafa, #e1e1e1);
   background-repeat: no-repeat;
   background-size: 100% 1px;
   background-position: bottom;
+
+  font-family: $base-font;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 3.1;
+
+  text-align: center;
+  color: var(--text-color);
 }
 
 .customer-name__text {
@@ -76,17 +72,26 @@
     font-size: 20px;
   }
 }
-.customer-review__circle {
+.circle-box__item {
   width: 4px;
   height: 4px;
   border-radius: 50%;
   background-color: red;
   display: inline-block;
-}
-.circle {
-  display: block;
-  margin: 0 auto;
-  &:not(:last-child) {
-    margin-right: 10px;
+  margin-right: 10px;
+  &:last-child {
+    margin-right: 0;
   }
 }
+.circle-box {
+  text-align: center;
+  margin-top: 16px;
+  margin-bottom: 16px;
+  @media screen and(min-width:$tablet) {
+    margin-top: 4px;
+    margin-bottom: 16px;
+  }
+}
+//   .circle {
+//   }
+// }
