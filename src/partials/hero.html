@@ -1,4 +1,5 @@
 <header class="header">
+  <a href="#" class="back-to-top"></a>
   <div class="container header__container">
     <a href="" class="header__logo">
       <img
@@ -204,3 +205,21 @@
     </div>
   </div>
 </section>
+<!-- <script>
+  function beckToTop() {
+    let button = $('.back-to-top');
+
+    $(window).on('scroll', () => {
+      if ($(this).scrollTop() >= 50) {
+        button.fadeIn();
+      } else {
+        button.fadeOut();
+      }
+    });
+    button.on('click', e => {
+      e.preventDefault();
+      $('html').animate({ scrollTop: 0 }, 1000);
+    });
+  }
+  backToTop();
+</script> -->

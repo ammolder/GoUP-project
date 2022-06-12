@@ -18,6 +18,50 @@
     align-items: center;
   }
 }
+
+.back-to-top {
+  position: fixed;
+  right: 20px;
+  bottom: 50px;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  border-color: transparent;
+  background-color: var(--secondary-text-color);
+  z-index: 10;
+  //   display: none;
+
+  &:hover,
+  &:focus {
+    background-color: #c7133d92;
+    // filter: brightness(0.9);
+    // outline: none;
+  }
+  &::after,
+  &::before {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -40%);
+  }
+  &::before {
+    width: 5px;
+    height: 25px;
+    border-top-left-radius: 3px;
+    border-top-right-radius: 3px;
+    background-color: var(--primari-white-color);
+  }
+  &::after {
+    width: 15px;
+    height: 15px;
+    border-top: 5px solid var(--primari-white-color);
+    border-left: 5px solid var(--primari-white-color);
+
+    transform: translate(-50%, -50%) rotate(45deg);
+  }
+}
+
 .logo-img {
   border-radius: 50%;
   background-color: var(--accent-text-color);
@@ -537,22 +581,26 @@
 }
 .header__btn-close {
   display: block;
-  position: relative;
   margin-left: auto;
   margin-bottom: 26px;
-  width: 30px;
-  height: 30px;
+
   padding: 0;
   border: 0;
   background-color: transparent;
 }
 
 .header__close {
+  position: relative;
+  display: block;
+  width: 30px;
+  height: 30px;
+
   &::before {
     content: '';
     position: absolute;
-    top: 1;
-    left: 0;
+    top: 50%;
+    left: 50%;
+
     width: 20px;
     height: 2px;
     background-color: var(--primari-white-color);
@@ -560,20 +608,21 @@
     transition-property: width background-color;
     transition-duration: 250ms;
     transition-timing-function: var(--timing-function);
-    transform: rotate(-45deg);
+    transform: translateX(-50%) rotate(-45deg);
   }
   &::after {
     content: '';
     position: absolute;
-    top: 1;
-    left: 0;
+    top: 50%;
+    left: 50%;
+
     width: 20px;
     height: 2px;
     background-color: var(--primari-white-color);
     transition-property: height background-color;
     transition-duration: 250ms;
     transition-timing-function: var(--timing-function);
-    transform: rotate(45deg);
+    transform: translateX(-50%) rotate(45deg);
   }
 }
 .header__btn-close:hover .header__close::before,
