@@ -31,11 +31,6 @@
   }
 }
 
-.container--no-padding {
-  padding-left: 0px;
-  padding-right: 0px;
-}
-
 .card {
   @media screen and (min-width: $tablet) {
     display: grid;
@@ -65,24 +60,6 @@
   @media screen and (min-width: $mobile) and (max-width: $max-mob) {
     margin-left: auto;
     margin-right: auto;
-  }
-
-  @media screen and (min-width: $tablet) and (max-width: $max-tab) {
-    &:first-child {
-      margin-left: 18px;
-    }
-    &:last-child {
-      margin-right: 18px;
-    }
-  }
-
-  @media screen and (min-width: $desktop) {
-    &:first-child {
-      margin-left: 16px;
-    }
-    &:last-child {
-      margin-right: 16px;
-    }
   }
 }
 
@@ -120,7 +97,12 @@
     bottom: -85px;
     border: 1px solid #e1e1e1;
 
-    @media screen and (max-width: 479px) {
+    @media screen and (max-width: 316px) {
+      width: 100%;
+      bottom: -115px;
+    }
+
+    @media screen and (min-width: 320px) and (max-width: 479px) {
       width: 240px;
     }
 
@@ -224,7 +206,7 @@
 
   &:hover,
   &:focus {
-    background-color: #d41342;
+    background-color: #c7133e;
   }
 
   @media screen and (max-width: $max-mob) {
