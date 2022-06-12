@@ -1,3 +1,17 @@
+$base-font: DM Sans, sans-serif;
+$title-font: Titan One, sans-serif;
+
+$font-primary: 16px;
+$font-second: 14px;
+
+
+$mobile: 480px;
+$max-mob: 767px;
+$tablet: 768px;
+$max-tab: 1199px;
+$desktop: 1200px;
+
+
 
 .container {
     margin: 0 auto;
@@ -38,21 +52,43 @@
     
     display: grid;
     
-    @media screen and (min-width: 320px) and (max-width: 767.99px) {
+    @media screen and (min-width: 320px) and (max-width: $max-mob) {
         grid-template-columns: 157px 158px 158px / 230px;
         grid-row-gap: 32px; 
         
     }
     
-    @media screen and (min-width: 768px) and (max-width: 1199px) {
-        grid-template: 226px / 180px 162px 159px;
-        grid-column-gap: 4px 22px;
+    @media screen and (min-width: $tablet) and (max-width: $max-tab) {
+        grid-template: 226px / 167px 167px 167px;
+        grid-column-gap: 22px;
     }
     
-    @media screen and (min-width: 1200px) {
+    @media screen and (min-width: $desktop) {
         grid-template: 223px / 288px 317px 288px;
-        grid-column-gap: 142px 106px;
+        grid-column-gap: 142px;
     }
+    
+    // @media screen and (min-width: 768px) and (max-width: 1199px) {
+    //     grid-template: 226px / 180px 162px 159px;
+    //     &>advantages__title:nth-child(1) {
+    //         grid-column-gap: 4px;
+    //     }
+    //     &>advantages__title:nth-child(2) {
+    //     grid-column-gap: 22px;
+    //     }
+    // }
+
+    // @media screen and (min-width: 1200px) {
+    //     grid-template: 226px / 180px 162px 159px;
+    //     &>advantages__title:nth-child(1) {
+    //         grid-column-gap: 142px;
+    //     }
+    //     &>advantages__title:nth-child(2) {
+    //         grid-column-gap: 106px;
+    //     }
+    // }
+    
+    
 }
 
 .advantages__item {
@@ -61,7 +97,7 @@
 
 .title__item {
     display: inline-block;
-    font-family: 'Titan One';
+    font-family: $title-font;
     font-style: normal;
     font-weight: 400;
     letter-spacing: 0.04em;
@@ -101,7 +137,7 @@
 }
 
 .title__text {
-    font-family: 'DM Sans';
+    font-family: $base-font;
     font-weight: 700;
     font-style: normal;
     font-size: 12px;
@@ -111,18 +147,16 @@
     
     @media screen and (min-width: $tablet) and (max-width: $max-tab) {
        
-        font-size: 14px;
+        font-size: $font-second;
         line-height: 1.74;
         
     }
 
-  
     @media screen and (min-width: $desktop) {
         
-        font-size: 16px;
+        font-size: $font-primary;
         line-height: 1.76;
         letter-spacing: 0.02em;    
-            
         
     }    
 
