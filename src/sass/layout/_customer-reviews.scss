@@ -9,7 +9,6 @@
   margin-bottom: 32px;
 }
 .customer-review__text {
-  position: relative;
   padding: 30px 50px 17px 50px;
   width: 280px;
   background-color: #fafafa;
@@ -33,7 +32,7 @@
   color: #e1e1e1;
 
   background-image: url(/src/images/quotes/quotes.png);
-  position: absolute;
+  position: relative;
 }
 .customer-review__words {
   display: inline;
@@ -51,6 +50,7 @@
 
   text-align: center;
   color: var(--text-color);
+  position: absolute;
 }
 
 .customer-name__text {
@@ -92,6 +92,3 @@
     margin-bottom: 16px;
   }
 }
-//   .circle {
-//   }
-// }
