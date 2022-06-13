@@ -91,8 +91,72 @@ $desktop: 1200px;
     
 }
 
-.advantages__item {
+// .advantages__item {
+//     margin-bottom: 36px;    
+// }
+
+.icon {
+    
     margin-bottom: 36px;
+    height: 50px;
+
+    &__one::before {
+        width: 33px;
+        height: 50px;
+
+        @media screen and (max-width: $max-mob) {
+           content: "";
+           display: block;
+           background-image: url("../images/advantages/advantages1-min.png");
+           background-size: 33px; 
+        }
+        @media screen and (min-width: $tablet) {
+           content: "";
+           display: block;
+           background-image: url("../images/advantages/advantages1@2x-min.png");
+           background-size: 33px;
+        }
+
+    }
+
+    &__two::before {
+        width: 50px;
+        height: 50px;
+
+        @media screen and (max-width: $max-mob) {
+           content: "";
+           display: block;
+           background-image: url("../images/advantages/advantages2-min.png"); 
+           background-size: 50px;
+        }
+        @media screen and (min-width: $tablet) {
+           content: "";
+           display: block;
+           background-image: url("../images/advantages/advantages2@2x-min.png");
+           background-size: 50px;
+        }
+
+    }
+
+    &__three::before {
+        width: 44px;
+        height: 50px;
+
+        @media screen and (max-width: $max-mob) {
+           content: "";
+           display: block;
+           background-image: url("../images/advantages/advantages3-min.png");
+           background-size: 44px;
+        }
+        @media screen and (min-width: $tablet) {
+           content: "";
+           display: block;
+           background-image: url("../images/advantages/advantages3@2x-min.png");
+           background-size: 44px;
+        }
+
+    }
+
 }
 
 .title__item {
@@ -140,20 +204,21 @@ $desktop: 1200px;
     font-family: $base-font;
     font-weight: 700;
     font-style: normal;
+    width: 230px;
     font-size: 12px;
     line-height: 1.7;
     color: #000000;
 
     
     @media screen and (min-width: $tablet) and (max-width: $max-tab) {
-       
+        width: 167px;
         font-size: $font-second;
         line-height: 1.74;
         
     }
 
     @media screen and (min-width: $desktop) {
-        
+        width: 297px;
         font-size: $font-primary;
         line-height: 1.76;
         letter-spacing: 0.02em;    
