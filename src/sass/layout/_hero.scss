@@ -1,3 +1,6 @@
+html {
+  scroll-behavior: smooth;
+}
 .header {
   position: absolute;
   top: 0;
@@ -17,6 +20,9 @@
     display: flex;
     align-items: center;
   }
+}
+.no-scroll {
+  overflow: hidden;
 }
 
 .back-to-top {
@@ -560,28 +566,21 @@
   @media screen and (min-width: $desktop) {
     padding-left: 121px;
   }
-
-  &__img {
-    position: absolute;
-    bottom: 0;
-
-    @media screen and (min-width: $tablet) {
-      right: 32px;
-    }
-    @media screen and (min-width: $desktop) {
-      right: 16px;
-    }
-  }
 }
 
 .header-mobile {
-  position: absolute;
+  display: none;
+  position: fixed;
   top: 0;
   right: 0;
   width: 254px;
-  height: 100vw;
+  height: 100%;
   background-color: var(--bg-menu);
   z-index: 5;
+  @media screen and (min-width: $tablet) {
+    height: 100%;
+    width: 40%;
+  }
 
   @media screen and (min-width: $desktop) {
     display: none;
@@ -590,6 +589,12 @@
     padding: 20px 20px 0 20px;
   }
 }
+.header-mobile.is-hidden {
+  @media screen and (max-width: $max-tab) {
+    display: block;
+  }
+}
+
 .header__btn-close {
   display: block;
   margin-left: auto;
@@ -679,17 +684,6 @@
   }
 }
 
-// .flex-mob:nth-child(2) {
-//   justify-content: center;
-// }
-
-// .header-model__icon {
-// }
-
-// .mobile-nav {
-// }
-// .mobile-list {
-// }
 .mobile-list__item {
   border-top: 1px solid #e18298;
   &:last-child {
@@ -711,5 +705,17 @@
   &:hover,
   &:focus {
     color: var(--accent-text-color);
+  }
+}
+
+.hero-box4__img {
+  position: absolute;
+  bottom: 0;
+
+  @media screen and (min-width: $tablet) {
+    right: 32px;
+  }
+  @media screen and (min-width: $desktop) {
+    right: 16px;
   }
 }
