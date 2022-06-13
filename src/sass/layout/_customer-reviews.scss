@@ -41,22 +41,33 @@
   left: -45px;
 }
 .customer-review__words {
-  display: inline;
-  background-repeat: no-repeat;
-  background-position: left bottom 15px;
-  background-size: 100% 12px;
-  background-image: linear-gradient(to right, #fafafa, #e1e1e1);
-
-  background-image: repeating-linear-gradient(#fafafa, #e1e1e1);
-  background-repeat: no-repeat;
-  background-size: 100% 1px;
-  background-position: bottom;
-
-  font-family: $base-font;
-  font-style: normal;
+  font-family: 'DM Sans', sans-serif;
   font-weight: 500;
   font-size: 12px;
-  line-height: 3.1;
+  line-height: 2.55;
+  padding: 0 18px;
+  background-image: repeating-linear-gradient(
+    to top,
+    #e1e1e1 0px 1px,
+    transparent 1px 31px
+  );
+  text-align: center;
+  // display: inline;
+  // background-repeat: no-repeat;
+  // background-position: left bottom 15px;
+  // background-size: 100% 12px;
+  // background-image: linear-gradient(to right, #fafafa, #e1e1e1);
+
+  // background-image: repeating-linear-gradient(#fafafa, #e1e1e1);
+  // background-repeat: no-repeat;
+  // background-size: 100% 1px;
+  // background-position: bottom;
+
+  // font-family: $base-font;
+  // font-style: normal;
+  // font-weight: 500;
+  // font-size: 12px;
+  // line-height: 3.1;
   @media screen and(min-width:$tablet) {
     font-size: 14px;
   }
@@ -118,7 +129,7 @@
   width: 12px;
   height: 12px;
   background-color: rgba(0, 0, 0, 0);
-  // background-image: закинуть іконку і додати;
+  background-image: url(/src/images/testimonials/house.svg);
   background-size: cover;
   border-radius: 0;
   align-items: center;
