@@ -10,7 +10,7 @@
 
     @media screen and (max-width: $mobile) {
           grid-template-columns: repeat(7, minmax(20px, 1fr));
-    grid-template-rows: repeat(21, minmax(5px, 1fr));
+    grid-template-rows: repeat(21, minmax(6px, 1fr));
     gap: 2px; 
       }
 
