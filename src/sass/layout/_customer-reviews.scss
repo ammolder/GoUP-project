@@ -1,7 +1,3 @@
-// delete  customer-rewiew mb 30px after making slide
-.customer-review {
-  margin-bottom: 30px;
-}
 .customer-review__photo {
   display: block;
   margin: 0 auto;
@@ -37,14 +33,18 @@
   background-image: url(/src/images/quotes/quotes.png);
   position: absolute;
   z-index: -1;
-  top: -19px;
-  left: -45px;
+  top: -15px;
+  left: -24px;
+  @media screen and(min-width:$desktop) {
+    top: -15px;
+    left: -18px;
+  }
 }
 .customer-review__words {
   font-family: 'DM Sans', sans-serif;
   font-weight: 500;
   font-size: 12px;
-  line-height: 2.55;
+  line-height: 2.54;
   padding: 0 18px;
   background-image: repeating-linear-gradient(
     to top,
@@ -52,27 +52,17 @@
     transparent 1px 31px
   );
   text-align: center;
-  // display: inline;
-  // background-repeat: no-repeat;
-  // background-position: left bottom 15px;
-  // background-size: 100% 12px;
-  // background-image: linear-gradient(to right, #fafafa, #e1e1e1);
-
-  // background-image: repeating-linear-gradient(#fafafa, #e1e1e1);
-  // background-repeat: no-repeat;
-  // background-size: 100% 1px;
-  // background-position: bottom;
-
-  // font-family: $base-font;
-  // font-style: normal;
-  // font-weight: 500;
-  // font-size: 12px;
-  // line-height: 3.1;
+  @media screen and(min-width:$mobile) {
+    line-height: 2.5;
+  }
   @media screen and(min-width:$tablet) {
     font-size: 14px;
+    line-height: 2.15;
+    // прописати властивість, що розтягне лінію по всьому діву
   }
   @media screen and(min-width:$desktop) {
     font-size: 16px;
+    line-height: 2.14;
   }
 
   text-align: center;
@@ -126,27 +116,11 @@
   font-size: 80px;
 }
 .swiper-pagination-bullet-active {
-  background-image: url(/src/images/testimonials/house.svg);
-  background-size: cover;
-  border-radius: unset;
-  width: 20px;
-  height: 20px;
-
-  // width: 12px;
-  // height: 12px;
-  // background-color: rgba(0, 0, 0, 0);
+  width: 12px;
+  height: 12px;
+  background-color: var(--btn-hover-accent);
   // background-image: url(/src/images/testimonials/house.svg);
-  // background-size: cover;
-  // border-radius: 0;
-  // align-items: center;
+  background-size: cover;
+  border-radius: 0;
+  align-items: center;
 }
-
-// .swiper-pagination-bullet-active {
-//   width: 12px;
-//   height: 12px;
-//   background-color: rgba(0, 0, 0, 0);
-//   // background-image: url(/src/images/quotes/quotes.png);
-//   background-size: cover;
-//   border-radius: 0;
-//   align-items: center;
-// } //.
