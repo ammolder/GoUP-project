@@ -152,10 +152,10 @@ letter-spacing: 0.06em;
     .footer__tel{
         color: var(--accent-text-color);
         &:hover {
-            color: var(--btn-hover-accent);
+            color: var(--secondary-text-color);
         }
         &:focus {
-           color: var(--btn-hover-accent);
+           color: var(--secondary-text-color);
         }
     }
     .footer__cooperative-text{
