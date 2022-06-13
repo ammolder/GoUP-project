@@ -12,6 +12,11 @@
         width: 100%;
 
     }
+    @media screen and (min-width: $mobile) {
+        width: $mobile;
+        padding-left: 32px;
+        padding-right: 32px;
+    }
 
     @media screen and (min-width: $tablet) {
         width: $tablet;
