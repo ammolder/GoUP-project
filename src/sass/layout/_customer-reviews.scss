@@ -126,13 +126,19 @@
   font-size: 80px;
 }
 .swiper-pagination-bullet-active {
-  width: 12px;
-  height: 12px;
-  background-color: rgba(0, 0, 0, 0);
   background-image: url(/src/images/testimonials/house.svg);
   background-size: cover;
-  border-radius: 0;
-  align-items: center;
+  border-radius: unset;
+  width: 20px;
+  height: 20px;
+
+  // width: 12px;
+  // height: 12px;
+  // background-color: rgba(0, 0, 0, 0);
+  // background-image: url(/src/images/testimonials/house.svg);
+  // background-size: cover;
+  // border-radius: 0;
+  // align-items: center;
 }
 
 // .swiper-pagination-bullet-active {
