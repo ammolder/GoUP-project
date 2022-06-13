@@ -102,9 +102,9 @@
       bottom: -115px;
     }
 
-    @media screen and (min-width: 320px) and (max-width: 479px) {
-      width: 240px;
-    }
+    // @media screen and (min-width: 320px) and (max-width: 479px) {
+    //   width: 100%;
+    // }
 
     @media screen and (min-width: $tablet) and (max-width: $max-tab) {
       bottom: -121px;
@@ -129,11 +129,6 @@
 
   @media screen and (min-width: $desktop) {
     width: 243px;
-  }
-}
-.schedule {
-  @media screen and (min-width: 320px) and (max-width: 479px) {
-    width: 240px;
   }
 }
 
