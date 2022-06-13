@@ -1,11 +1,12 @@
 .section-bgc {
   background-color: #fff5f6;
+  background-repeat: no-repeat;
 
   @media screen and (max-width: 767px) {
     background-image: url(/src/images/about/bg-milk-mob-left.png),
       url(/src/images/about/bg-milk-mob-right.png);
-    background-repeat: no-repeat;
-    background-position: left bottom 190px, right bottom 190px;
+    background-size: 150px 150px, 150px 120px;
+
     @media screen and (min-device-pixel-ratio: 2),
       screen and (min-resolution: 192dpi),
       screen and (min-resolution: 2dppx) {
@@ -13,11 +14,21 @@
         url(/src/images/about/bg-milk-mob-right-@2x.png);
     }
   }
+  @media screen and (max-width: 379px) {
+    background-position: left bottom 180px, right bottom 190px;
+  }
+  @media screen and (min-width: 380px) {
+    background-position: left bottom 140px, right bottom 150px;
+  }
+  @media screen and (min-width: 480px) {
+    background-position: left bottom 120px, right bottom 120px;
+  }
   @media screen and (min-width: 1200px) {
     background-image: url(/src/images/about/bg-milk-desk-left.png),
       url(/src/images/about/bg-milk-desk-right.png);
     background-repeat: no-repeat;
-    background-position: left bottom 13px, right bottom 25px;
+    background-position: left bottom 54px, right bottom -46px;
+    background-size: 700px 500px, 700px 600px;
     @media screen and (min-device-pixel-ratio: 2),
       screen and (min-resolution: 192dpi),
       screen and (min-resolution: 2dppx) {
@@ -74,9 +85,15 @@
   font-size: 12px;
   line-height: 1.62;
   color: var(--text-color);
-  @media screen and (max-width: 320px) {
+  @media screen and (max-width: 379px) {
     max-width: 220px;
     margin-top: 40px;
+  }
+  @media screen and (min-width: 380px) {
+    max-width: 300px;
+  }
+  @media screen and (min-width: 480px) {
+    max-width: 400px;
   }
   @media screen and (min-width: 768px) {
     font-size: 14px;
@@ -96,8 +113,14 @@
   font-size: 12px;
   line-height: 1.62;
   color: var(--extra-text-color);
-  @media screen and (max-width: 320px) {
+  @media screen and (max-width: 379px) {
     max-width: 220px;
+  }
+  @media screen and (min-width: 380px) {
+    max-width: 300px;
+  }
+  @media screen and (min-width: 480px) {
+    max-width: 400px;
   }
   @media screen and (min-width: 768px) {
     font-size: 14px;
