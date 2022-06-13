@@ -1,114 +1,38 @@
-$base-font: DM Sans, sans-serif;
-$title-font: Titan One, sans-serif;
-
-$font-primary: 16px;
-$font-second: 14px;
-
-
-$mobile: 480px;
-$max-mob: 767px;
-$tablet: 768px;
-$max-tab: 1199px;
-$desktop: 1200px;
-
-
-
-.container {
-    margin: 0 auto;
-    padding-left: 20px;
-    padding-right: 20px;
-
-    @media screen and (min-width: 320px) {
-        width: 100%;
-
-    }
-
-    @media screen and (min-width: $tablet) {
-        width: $tablet;
-        padding-left: 32px;
-        padding-right: 32px;
-    }
-
-    @media screen and (min-width: $desktop) {
-        width: $desktop;
-        padding-left: 16px;
-        padding-right: 16px;
-    }
-}
-
 .advantages__section {
     padding-top: 40px;
     padding-bottom: 40px;
     background-color: #FFF5F6;
-    
-
     @media screen and (min-width: $desktop) {
         padding-top: 60px;
         padding-bottom: 60px;
     }
 }
-
 .advantages__list {
-    
     display: grid;
-    
     @media screen and (min-width: 320px) and (max-width: $max-mob) {
         grid-template-columns: 157px 158px 158px / 230px;
-        grid-row-gap: 32px; 
-        
+        grid-row-gap: 32px;
     }
-    
     @media screen and (min-width: $tablet) and (max-width: $max-tab) {
         grid-template: 226px / 167px 167px 167px;
         grid-column-gap: 22px;
     }
-    
     @media screen and (min-width: $desktop) {
         grid-template: 223px / 288px 317px 288px;
         grid-column-gap: 142px;
     }
-    
-    // @media screen and (min-width: 768px) and (max-width: 1199px) {
-    //     grid-template: 226px / 180px 162px 159px;
-    //     &>advantages__title:nth-child(1) {
-    //         grid-column-gap: 4px;
-    //     }
-    //     &>advantages__title:nth-child(2) {
-    //     grid-column-gap: 22px;
-    //     }
-    // }
-
-    // @media screen and (min-width: 1200px) {
-    //     grid-template: 226px / 180px 162px 159px;
-    //     &>advantages__title:nth-child(1) {
-    //         grid-column-gap: 142px;
-    //     }
-    //     &>advantages__title:nth-child(2) {
-    //         grid-column-gap: 106px;
-    //     }
-    // }
-    
-    
 }
-
-// .advantages__item {
-//     margin-bottom: 36px;    
-// }
-
 .icon {
-    
     margin-bottom: 36px;
     height: 50px;
-
     &__one::before {
         width: 33px;
         height: 50px;
-
         @media screen and (max-width: $max-mob) {
            content: "";
            display: block;
            background-image: url("../images/advantages/advantages1-min.png");
-           background-size: 33px; 
+           background-size: 33px;
         }
         @media screen and (min-width: $tablet) {
            content: "";
@@ -116,17 +40,14 @@ $desktop: 1200px;
            background-image: url("../images/advantages/advantages1@2x-min.png");
            background-size: 33px;
         }
-
     }
-
     &__two::before {
         width: 50px;
         height: 50px;
-
         @media screen and (max-width: $max-mob) {
            content: "";
            display: block;
-           background-image: url("../images/advantages/advantages2-min.png"); 
+           background-image: url("../images/advantages/advantages2-min.png");
            background-size: 50px;
         }
         @media screen and (min-width: $tablet) {
@@ -135,13 +56,10 @@ $desktop: 1200px;
            background-image: url("../images/advantages/advantages2@2x-min.png");
            background-size: 50px;
         }
-
     }
-
     &__three::before {
         width: 44px;
         height: 50px;
-
         @media screen and (max-width: $max-mob) {
            content: "";
            display: block;
@@ -154,11 +72,8 @@ $desktop: 1200px;
            background-image: url("../images/advantages/advantages3@2x-min.png");
            background-size: 44px;
         }
-
     }
-
 }
-
 .title__item {
     display: inline-block;
     font-family: $title-font;
@@ -168,38 +83,27 @@ $desktop: 1200px;
     text-align: right;
     text-transform: uppercase;
     color: var(--accent-text-color);
-
-
     @media screen and (min-width: 320px) and (max-width: $max-mob) {
-        
         height: 56px;
         font-size: 36px;
         margin-top: 16px;
         line-height: 1.14;
-        
     }
-
     @media screen and (min-width: $tablet) and (max-width: $max-tab) {
-        
         height: 56px;
         font-size: 48px;
         margin-top: 36px;
         margin-bottom: 13px;
         line-height: 1.15;
     }
-
-  
     @media screen and (min-width: $desktop) {
-        
         height: 65px;
         font-size: 58px;
         margin-top: 31px;
         margin-bottom: 25px;
         line-height: 1.15;
-        
-    }    
+    }
 }
-
 .title__text {
     font-family: $base-font;
     font-weight: 700;
@@ -208,21 +112,15 @@ $desktop: 1200px;
     font-size: 12px;
     line-height: 1.7;
     color: #000000;
-
-    
     @media screen and (min-width: $tablet) and (max-width: $max-tab) {
         width: 167px;
         font-size: $font-second;
         line-height: 1.74;
-        
     }
-
     @media screen and (min-width: $desktop) {
         width: 297px;
         font-size: $font-primary;
         line-height: 1.76;
-        letter-spacing: 0.02em;    
-        
-    }    
-
+        letter-spacing: 0.02em;
+    }
 }

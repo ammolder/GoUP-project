@@ -3,7 +3,7 @@
     padding-bottom: 48px;
   }
 }
-​
+
 .contact {
   @media screen and (max-width: $max-mob) {
     background-image: linear-gradient(
@@ -30,7 +30,7 @@
     );
   }
 }
-​
+
 .card {
   @media screen and (min-width: $tablet) {
     display: grid;
@@ -38,14 +38,14 @@
     grid-gap: 32px;
   }
 }
-​
+
 .card__item {
   background-color: var(--primari-white-color);
   box-shadow: 0px 8px 30px rgba(212, 20, 67, 0.1);
   border-radius: 24px;
   padding: 40px 32px;
   margin-bottom: 20px;
-​
+
   &:hover,
   &:focus {
     box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
@@ -56,12 +56,13 @@
     margin-left: auto;
     margin-right: auto;
   }
+
   @media screen and (min-width: $mobile) and (max-width: $max-mob) {
     margin-left: auto;
     margin-right: auto;
   }
 }
-​
+
 .card__location {
   color: var(--primary-text-color);
   background-color: #f0d1a5;
@@ -74,11 +75,11 @@
   height: 28px;
   margin-bottom: 20px;
 }
-​
+
 .card__location--background {
   background-color: #c2e297;
 }
-​
+
 .card__city-text {
   position: relative;
   color: var(--text-color);
@@ -87,6 +88,7 @@
   line-height: 1.87;
   letter-spacing: 0.04em;
   margin-bottom: 8px;
+
   &::after {
     content: '';
     position: absolute;
@@ -94,34 +96,42 @@
     width: 100%;
     bottom: -93px;
     border: 1px solid #e1e1e1;
+
     @media screen and (max-width: 316px) {
       width: 100%;
       bottom: -115px;
     }
+
     // @media screen and (min-width: 320px) and (max-width: 479px) {
     //   width: 100%;
     // }
+
     @media screen and (min-width: $tablet) and (max-width: $max-tab) {
       bottom: -121px;
     }
   }
 }
+
 .card__text {
   color: var(--extra-text-color);
   font-weight: 500;
   font-size: $font-primary;
   line-height: 1.81;
   margin-bottom: 48px;
+
   @media screen and (min-width: 320px) and (max-width: $max-mob) {
     width: 240px;
   }
+
   @media screen and (min-width: $tablet) and (max-width: $max-tab) {
     width: 158px;
   }
+
   @media screen and (min-width: $desktop) {
     width: 243px;
   }
 }
+
 .schedule__item {
   &:first-child {
     margin-bottom: 8px;
@@ -139,6 +149,7 @@
     border: 1px solid #e1e1e1;
   }
 }
+
 .schedule__data-text {
   color: var(--text-color);
   font-weight: 500;
@@ -146,23 +157,27 @@
   line-height: 1.87;
   letter-spacing: 0.04em;
 }
+
 .schedule__time-text {
   color: var(--secondary-text-color);
   font-weight: 500;
   font-size: $font-primary;
   line-height: 1.87;
 }
+
 .connect__link {
   color: var(--extra-text-color);
   font-weight: 500;
   font-size: $font-primary;
   line-height: 1.81;
+
   &:hover,
   &:focus,
   &:active {
     color: var(--secondary-text-color);
   }
 }
+
 .contact-button {
   @media screen and (max-width: $max-mob) {
     display: block;
@@ -175,6 +190,7 @@
     justify-content: center;
   }
 }
+
 .contact-button__btn--first {
   color: #ffffff;
   background-color: #d41342;
@@ -182,23 +198,28 @@
   transition-property: background;
   transition-duration: 250ms;
   transition-timing-function: var(--timing-function);
+
   &:hover,
   &:focus {
     background-color: #c7133e;
   }
+
   @media screen and (max-width: $max-mob) {
     margin-bottom: 10px;
     width: 161px;
   }
+
   @media screen and (min-width: $tablet) and (max-width: $max-tab) {
     width: 191px;
     margin-right: 14.5px;
   }
+
   @media screen and (min-width: $desktop) {
     width: 198px;
     margin-right: 15px;
   }
 }
+
 .contact-button__btn--second {
   cursor: pointer;
   transition-property: background;
@@ -207,17 +228,21 @@
   @media screen and (max-width: $max-mob) {
     width: 161px;
   }
+
   @media screen and (min-width: $tablet) and (max-width: $max-tab) {
     width: 174px;
   }
+
   @media screen and (min-width: $desktop) {
     width: 180px;
   }
 }
+
 .contact-icon-first {
   margin-left: 13px;
   fill: #ffffff;
 }
+
 .contact-icon-second {
   margin-left: 13px;
   fill: #d41342;
