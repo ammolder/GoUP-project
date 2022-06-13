@@ -18,6 +18,9 @@
     align-items: center;
   }
 }
+.no-scroll {
+  overflow: hidden;
+}
 
 .back-to-top {
   position: fixed;
@@ -575,13 +578,18 @@
 }
 
 .header-mobile {
-  position: absolute;
+  display: none;
+  position: fixed;
   top: 0;
   right: 0;
   width: 254px;
-  height: 100vw;
+  height: 100%;
   background-color: var(--bg-menu);
   z-index: 5;
+  @media screen and (min-width: $tablet) {
+    height: 100%;
+    width: 40%;
+  }
 
   @media screen and (min-width: $desktop) {
     display: none;
@@ -590,6 +598,12 @@
     padding: 20px 20px 0 20px;
   }
 }
+.header-mobile.is-hidden {
+  @media screen and (max-width: $max-tab) {
+    display: block;
+  }
+}
+
 .header__btn-close {
   display: block;
   margin-left: auto;
