@@ -141,13 +141,21 @@ letter-spacing: 0.06em;
             font-size: 16px;
         }
     }
+    .footer__text {
+        .footer__contact:hover & {
+            color: var(--extra-text-color);
+        }
+        .footer__contact:focus & {
+           color: var(--extra-text-color);
+        }
+    }
     .footer__tel{
         color: var(--accent-text-color);
-        &:hover {
-            color: var(--secondary-text-color);
+        .footer__contact:hover  &{
+            color: var(--btn-hover-accent);
         }
-        &:focus {
-           color: var(--secondary-text-color);
+        .footer__contact:focus & {
+           color: var(--btn-hover-accent);
         }
     }
     .footer__cooperative-text{
@@ -169,7 +177,7 @@ padding-right: 0;
        margin-left: auto;
        margin-right: auto;
        @media (min-width: $tablet) {
-        width: 276px;
+        width: 300px;
     }
     }
 .footer-contact {
