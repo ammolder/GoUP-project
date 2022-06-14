@@ -9,13 +9,14 @@
 }
 .advantages__list {
     display: grid;
+    align-items: flex-end;
     @media screen and (min-width: 320px) and (max-width: $max-mob) {
         grid-template-columns: 157px 158px 158px / 230px;
         grid-row-gap: 32px;
     }
     @media screen and (min-width: $tablet) and (max-width: $max-tab) {
-        grid-template: 226px / 167px 167px 167px;
-        grid-column-gap: 22px;
+        grid-template: 226px / 180px 180px 180px;
+        grid-column-gap: 60px;
     }
     @media screen and (min-width: $desktop) {
         grid-template: 223px / 288px 317px 288px;
@@ -113,7 +114,7 @@
     line-height: 1.7;
     color: #000000;
     @media screen and (min-width: $tablet) and (max-width: $max-tab) {
-        width: 167px;
+        width: 180px;
         font-size: $font-second;
         line-height: 1.74;
     }
