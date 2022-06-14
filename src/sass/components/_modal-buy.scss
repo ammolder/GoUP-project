@@ -68,10 +68,15 @@
   width: 20px;
   height: 20px;
   border-color: transparent;
-  background: grey;
+  background: transparent;
   display: flex;
   justify-content: center;
   align-items: center;
+
+  &:hover {
+    background-color: var(--accent-text-color);
+    border-radius: 50%;
+  }
 }
 
 .modal-buy__btn-close-icon {
