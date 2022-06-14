@@ -4,35 +4,56 @@
       <p class="about__text-label">tradition and love</p>
       <h2 class="about__title">how it’s made?</h2>
       <div class="about__thumb-main">
-        <picture>
-          <source
-            srcset="
-              ./images/about/cow-desk-min.png    1x,
-              ./images/about/cow-desk@2x-min.png 2x
-            "
-            media="(min-width: 1200px)"
-          />
-          <source
-            srcset="
-              ./images/about/cow-tab-min.png    1x,
-              ./images/about/cow-tab@2x-min.png 2x
-            "
-            media="(min-width: 768px)"
-          />
-          <source
-            srcset="
-              ./images/about/cow-mob-min.png    1x,
-              ./images/about/cow-mob@2x-min.png 2x
-            "
-            media="(max-width: 767px)"
-          />
+        <div class="about__overlay-box">
+          <picture>
+            <source
+              srcset="
+                ./images/about/cow-desk-min.png    1x,
+                ./images/about/cow-desk@2x-min.png 2x
+              "
+              media="(min-width: 1200px)"
+            />
+            <source
+              srcset="
+                ./images/about/cow-tab-min.png    1x,
+                ./images/about/cow-tab@2x-min.png 2x
+              "
+              media="(min-width: 768px)"
+            />
+            <source
+              srcset="
+                ./images/about/cow-mob-min.png    1x,
+                ./images/about/cow-mob@2x-min.png 2x
+              "
+              media="(max-width: 767px)"
+            />
 
-          <img
-            class="about__img"
-            src="./images/about/cow-tab-min.png"
-            alt="Корова"
-          />
-        </picture>
+            <img
+              class="about__img"
+              src="./images/about/cow-tab-min.png"
+              alt="Корова"
+            />
+          </picture>
+          <div id="myDropdown" class="about__overlay">
+            <div class="about__text-thumb">
+              <p class="about__text-circle">
+                Fusce ut velit laoreet, tempus arcu eu, molestie tortor. Nam vel
+                justo cursus, faucibus lorem eget, egestas eros. Maecenas
+                eleifend erat at justo fringilla.
+              </p>
+              <p class="about__text-second">
+                Curabitur lacinia enim at ex blandit, vel pellentesque odio
+                elementum. Mauris rhoncus orci in imperdiet placerat. Vestibulum
+                euismod nisl suscipit ligula volutpat, a feugiat urna maximus.
+                Cras massa nibh, tincidunt.
+              </p>
+              <p class="about__text-second margin">
+                Aliquam erat volutpat. Aenean accumsan.
+              </p>
+            </div>
+          </div>
+        </div>
+
         <div class="about__thumb-text">
           <p class="about__text-circle">
             Fusce ut velit laoreet, tempus arcu eu, molestie tortor. Nam vel
@@ -48,7 +69,7 @@
           <p class="about__text-second margin">
             Aliquam erat volutpat. Aenean accumsan.
           </p>
-          <button class="about__btn btn" type="button">
+          <button id="myBtn" class="about__btn btn" type="button">
             Read more
             <svg class="about__icon" width="10px" height="8px">
               <use href="./images/sprite.svg#right-arrow"></use>
@@ -59,3 +80,12 @@
     </div>
   </div>
 </section>
+<script>
+  document.getElementById('myBtn').onclick = function () {
+    myFunction();
+  };
+
+  function myFunction() {
+    document.getElementById('myDropdown').classList.toggle('show');
+  }
+</script>
