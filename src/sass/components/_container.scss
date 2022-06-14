@@ -2,10 +2,11 @@
   margin: 0 auto;
   padding-left: 20px;
   padding-right: 20px;
-
+  @media screen and (min-width: 320px) {
+    width: 100%;
+  }
   @media screen and (min-width: $mobile) {
     width: $mobile;
-    
   }
   @media screen and (min-width: $tablet) {
     width: $tablet;
