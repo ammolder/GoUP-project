@@ -1,4 +1,5 @@
 .modal-fr {
+  display: none;
   margin-right: auto;
   margin-left: auto;
   max-width: 550px;
@@ -7,7 +8,8 @@
   padding: 30px 20px;
 
   .backdrop.is-hidden & {
-    transform: scale(1.3);
+    display: block;
+    // transform: scale(1.3);
   }
 
   @media screen and (min-width: $mobile) {

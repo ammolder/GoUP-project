@@ -1,3 +1,19 @@
+.section__contact {
+  background-color: #fff5f6;
+    background-repeat: no-repeat;
+  
+    @media screen and (min-width: 1200px) {
+      background-image: url(/src/images/contact/contact.png);
+      background-repeat: no-repeat;
+      background-position: left bottom 54px, right bottom -46px;
+      background-size: 700px 500px, 700px 600px;
+      @media screen and (min-device-pixel-ratio: 2),
+        screen and (min-resolution: 192dpi),
+        screen and (min-resolution: 2dppx) {
+        background-image: url(/src/images/contact/contact@2x.png);
+      }
+    }
+}
 .section--mob {
   @media screen and (max-width: $max-mob) {
     padding-bottom: 48px;
