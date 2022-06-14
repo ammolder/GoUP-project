@@ -1,5 +1,5 @@
 .modal-fr {
-  display: none;
+  // display: none;
   margin-right: auto;
   margin-left: auto;
   max-width: 550px;
@@ -42,6 +42,9 @@
   text-transform: uppercase;
   color: var(--accent-text-color);
   margin-bottom: 14px;
+  max-width: 500px;
+  margin-left: auto;
+  margin-right: auto;
   text-align: center;
 }
 
