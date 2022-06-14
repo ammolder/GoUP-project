@@ -82,7 +82,7 @@ html {
   font-family: $title-font;
   font-style: normal;
   font-weight: 400;
-  font-size: 32px;
+  font-size: 27px;
   text-transform: uppercase;
   color: var(--accent-text-color);
 
@@ -97,11 +97,11 @@ html {
   align-items: center;
   position: relative;
 }
-
 .nav {
   display: none;
   @media screen and (min-width: $desktop) {
-    margin-left: 175px;
+    margin-left: auto;
+    margin-right: auto;
     display: flex;
     align-items: center;
   }
@@ -162,9 +162,6 @@ html {
   }
   @media screen and (min-width: $mobile) {
     margin-left: 32px;
-  }
-  @media screen and (min-width: $desktop) {
-    margin-left: auto;
   }
 }
 .header-model__icon {
