@@ -41,8 +41,6 @@ html {
   &:hover,
   &:focus {
     background-color: #c7133d92;
-    // filter: brightness(0.9);
-    // outline: none;
   }
   &::after,
   &::before {
@@ -179,9 +177,7 @@ html {
   padding: 0;
   border: 0;
   background-color: transparent;
-  //   @media screen and (min-width: $tablet) {
-  //     margin-left: 293px;
-  //   }
+ 
   @media screen and (min-width: $desktop) {
     display: none;
   }
@@ -565,29 +561,38 @@ html {
     padding-left: 121px;
   }
 }
+.backdrop-mobile {
+  background: rgba(0, 0, 0, 0.277);
+  position: fixed;
+  top: 0;
+  right: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 9999;
+  display: none;
+  @media screen and (min-width: $desktop) {
+    display: none;
+  }
+}
 
 .header-mobile {
-  display: none;
   position: fixed;
   top: 0;
   right: 0;
   width: 254px;
   height: 100%;
   background-color: var(--bg-menu);
-  z-index: 9999;
   @media screen and (min-width: $tablet) {
     height: 100%;
     width: 40%;
   }
 
-  @media screen and (min-width: $desktop) {
-    display: none;
-  }
+
   &__container {
     padding: 20px 20px 0 20px;
   }
 }
-.header-mobile.is-hidden {
+.backdrop-mobile.is-hidden {
   @media screen and (max-width: $max-tab) {
     display: block;
   }
