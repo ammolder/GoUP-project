@@ -43,9 +43,7 @@ html {
   &:focus {
     background-color: #c7133d92;
     transform: rotate(360deg);
-
-    // filter: brightness(0.9);
-    // outline: none;
+    box-shadow: 0px 4px 4px rgb(0 0 0 / 15%);
   }
   &::after,
   &::before {
@@ -97,7 +95,9 @@ html {
   &:hover,
     &:focus {
       background: var(--btn-hover);
+      box-shadow: 0px 4px 4px rgb(0 0 0 / 15%);
     }
+    
 }
 .header__container {
   display: flex;
@@ -161,6 +161,7 @@ html {
   &:hover,
   &:focus {
     background-color: var(--btn-hover);
+    box-shadow: 0px 4px 4px rgb(0 0 0 / 15%);
   }
   @media screen and (max-width: $max-mob) {
     display: none;
@@ -196,6 +197,7 @@ html {
   &:focus .header__burger::before {
     width: 18px;
     background-color: rgb(188, 64, 64);
+
   }
 
   &:hover .header__burger::after,
@@ -404,6 +406,7 @@ html {
     &:hover,
     &:focus {
       background: rgba(199, 19, 61, 0.663);
+      box-shadow: 0px 4px 4px rgb(0 0 0 / 15%);
     }
   }
   &--style2 {
@@ -415,6 +418,7 @@ html {
     &:hover,
     &:focus {
       background: var(--btn-hover);
+      box-shadow: 0px 4px 4px rgb(0 0 0 / 15%);
     }
   }
 }
@@ -710,6 +714,7 @@ opacity: 1;
   &:hover,
   &:focus {
     background: var(--btn-hover);
+     box-shadow: 0px 4px 4px rgb(0 0 0 / 15%);
   }
 }
 
