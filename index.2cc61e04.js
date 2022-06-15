@@ -1,0 +1,2 @@
+!function(){var o={openFormBtn:document.querySelector(".contact-button__btn--second"),closeFormBtn:document.querySelector(".modal-buy__btn-close-form"),form:document.querySelector(".backdrop-form"),bodyForm:document.querySelector("body")};function e(){o.form.classList.toggle("is-hidd-form"),o.bodyForm.classList.toggle("no-scroll-form")}o.openFormBtn.addEventListener("click",e),o.closeFormBtn.addEventListener("click",e)}();
+//# sourceMappingURL=index.2cc61e04.js.map
