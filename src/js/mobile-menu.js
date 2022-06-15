@@ -2,7 +2,7 @@
   const refs = {
     openMenuBtn: document.querySelector('.header__btn'),
     closeMenuBtn: document.querySelector('.header__btn-close'),
-    menu: document.querySelector('.header-mobile'),
+    menu: document.querySelector('.backdrop-mobile'),
     body: document.querySelector('body'),
   };
   refs.openMenuBtn.addEventListener('click', toggleMenu);

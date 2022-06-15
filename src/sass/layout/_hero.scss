@@ -41,8 +41,6 @@ html {
   &:hover,
   &:focus {
     background-color: #c7133d92;
-    // filter: brightness(0.9);
-    // outline: none;
   }
   &::after,
   &::before {
@@ -177,9 +175,10 @@ html {
   padding: 0;
   border: 0;
   background-color: transparent;
-  //   @media screen and (min-width: $tablet) {
-  //     margin-left: 293px;
-  //   }
+  transition-property: transform background-color; 
+  transition-duration: 500ms;
+  transition-timing-function: linear;
+ 
   @media screen and (min-width: $desktop) {
     display: none;
   }
@@ -563,33 +562,59 @@ html {
     padding-left: 121px;
   }
 }
-
-.header-mobile {
-  display: none;
+.backdrop-mobile {
   position: fixed;
   top: 0;
   right: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 9999;
+
+  background: rgba(0,0,0,.2);
+    transition-property: opacity,visibility;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  @media screen and (min-width: $desktop) {
+    display: none;
+  }
+}
+.backdrop-mobile.is-hidden {
+  @media screen and (max-width: $max-tab) {
+    opacity: 0;
+    pointer-events: none;
+    visibility: hidden;
+   
+  }
+}
+
+
+
+.header-mobile {
+  position: fixed;
+  top: -100%;
+  right: 0;
   width: 254px;
   height: 100%;
+  opacity: 0;
   background-color: var(--bg-menu);
-  z-index: 9999;
+  transition-property: transform, opasiti;
+  transition-duration: 500ms;
+  transition-timing-function: linear;
   @media screen and (min-width: $tablet) {
     height: 100%;
     width: 40%;
   }
 
-  @media screen and (min-width: $desktop) {
-    display: none;
-  }
+
   &__container {
     padding: 20px 20px 0 20px;
   }
 }
-.header-mobile.is-hidden {
-  @media screen and (max-width: $max-tab) {
-    display: block;
-  }
+.backdrop-mobile .header-mobile {
+transform: translateY(100%);
+opacity: 1;
 }
+
 
 .header__btn-close {
   display: block;
