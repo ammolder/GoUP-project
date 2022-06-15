@@ -188,7 +188,7 @@
   font-weight: 500;
   font-size: $font-primary;
   line-height: 1.81;
-
+  transition: color 250ms var(--timing-function);
   &:hover,
   &:focus,
   &:active {
