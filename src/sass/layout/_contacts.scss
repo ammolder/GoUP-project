@@ -2,25 +2,17 @@
   background-color: #fff5f6;
     background-repeat: no-repeat;
   
-    @media screen and (min-width: 1200px) {
-      background-image: url(/src/images/contact/contact.png);
-      background-repeat: no-repeat;
-      background-position: left bottom 54px, right bottom -46px;
-      background-size: 700px 500px, 700px 600px;
-      @media screen and (min-device-pixel-ratio: 2),
-        screen and (min-resolution: 192dpi),
-        screen and (min-resolution: 2dppx) {
-        background-image: url(/src/images/contact/contact@2x.png);
-      }
-    }
-}
-.section--mob {
-  @media screen and (max-width: $max-mob) {
-    padding-bottom: 48px;
-  }
-}
-
-.contact {
+    // @media screen and (min-width: 1200px) {
+    //   background-image: url(/src/images/contact/contact.png);
+    //   background-repeat: no-repeat;
+    //   background-position: left bottom 54px, right bottom -46px;
+    //   background-size: 700px 500px, 700px 600px;
+    //   @media screen and (min-device-pixel-ratio: 2),
+    //     screen and (min-resolution: 192dpi),
+    //     screen and (min-resolution: 2dppx) {
+    //     background-image: url(/src/images/contact/contact@2x.png);
+    //   }
+    // }
   @media screen and (max-width: $max-mob) {
     background-image: linear-gradient(
       to bottom,
@@ -47,6 +39,12 @@
   }
 }
 
+.section--mob {
+  @media screen and (max-width: $max-mob) {
+    padding-bottom: 48px;
+  }
+}
+
 .card {
   @media screen and (min-width: $tablet) {
     display: grid;
@@ -60,8 +58,13 @@
   box-shadow: 0px 8px 30px rgba(212, 20, 67, 0.1);
   border-radius: 24px;
   padding: 40px 32px;
-  margin-bottom: 20px;
-
+  margin-bottom: 32px;
+  @media screen and (min-width: 320px) {
+   margin-bottom: 40px;
+  }
+  @media screen and (min-width: $desktop) {
+   margin-bottom: 60px;
+  }
   &:hover,
   &:focus {
     box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
@@ -72,7 +75,6 @@
     margin-left: auto;
     margin-right: auto;
   }
-
   @media screen and (min-width: $mobile) and (max-width: $max-mob) {
     margin-left: auto;
     margin-right: auto;

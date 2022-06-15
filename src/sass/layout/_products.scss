@@ -288,8 +288,8 @@
         background-color: var(--primari-white-color);
         fill: var(--accent-text-color);
     
-        transition-property: color, fill;
-        transition-duration: 250ms;
+        transition-property: background-color fill;
+        transition-duration: 500ms;
         transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1)     
 }
 .prod__link:hover, .prod__link:focus{
