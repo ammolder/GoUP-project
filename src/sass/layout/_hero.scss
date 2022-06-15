@@ -43,9 +43,7 @@ html {
   &:focus {
     background-color: #c7133d92;
     transform: rotate(360deg);
-
-    // filter: brightness(0.9);
-    // outline: none;
+    box-shadow: 0px 4px 4px rgb(0 0 0 / 15%);
   }
   &::after,
   &::before {
@@ -94,6 +92,12 @@ html {
 
 .btn-fix {
   padding: 0;
+  &:hover,
+    &:focus {
+      background: var(--btn-hover);
+      box-shadow: 0px 4px 4px rgb(0 0 0 / 15%);
+    }
+    
 }
 .header__container {
   display: flex;
@@ -157,6 +161,7 @@ html {
   &:hover,
   &:focus {
     background-color: var(--btn-hover);
+    box-shadow: 0px 4px 4px rgb(0 0 0 / 15%);
   }
   @media screen and (max-width: $max-mob) {
     display: none;
@@ -192,6 +197,7 @@ html {
   &:focus .header__burger::before {
     width: 18px;
     background-color: rgb(188, 64, 64);
+
   }
 
   &:hover .header__burger::after,
@@ -400,6 +406,7 @@ html {
     &:hover,
     &:focus {
       background: rgba(199, 19, 61, 0.663);
+      box-shadow: 0px 4px 4px rgb(0 0 0 / 15%);
     }
   }
   &--style2 {
@@ -411,6 +418,7 @@ html {
     &:hover,
     &:focus {
       background: var(--btn-hover);
+      box-shadow: 0px 4px 4px rgb(0 0 0 / 15%);
     }
   }
 }
@@ -596,13 +604,13 @@ html {
 
 .header-mobile {
   position: fixed;
-  top: -100%;
+  top: 0;
   right: 0;
   width: 254px;
   height: 100%;
   opacity: 0;
   background-color: var(--bg-menu);
-  transition-property: transform, opasiti;
+  transition-property: opasiti;
   transition-duration: 500ms;
   transition-timing-function: linear;
   @media screen and (min-width: $tablet) {
@@ -616,7 +624,6 @@ html {
   }
 }
 .backdrop-mobile .header-mobile {
-transform: translateY(100%);
 opacity: 1;
 }
 
@@ -707,6 +714,7 @@ opacity: 1;
   &:hover,
   &:focus {
     background: var(--btn-hover);
+     box-shadow: 0px 4px 4px rgb(0 0 0 / 15%);
   }
 }
 
@@ -743,5 +751,80 @@ opacity: 1;
   }
   @media screen and (min-width: $desktop) {
     right: 16px;
+  }
+}
+.anime-container {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  
+   @media screen and (min-width: $desktop) {
+  
+    left: 60%;
+  }
+  & .loader {
+    position: relative;
+    width: 164px;
+    height: 12px;
+    @media screen and (min-width: $desktop) {
+      width: 360px;
+    }
+  }
+
+  & .loader span {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    transform: rotate(calc(18deg * var(--i)));
+  }
+
+  & .loader span::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 30px;
+    height: 30px;
+    background: #fb9fb4;
+    border-radius: 50%;
+    box-shadow: 0 0 10px #fb9fb4, 0 0 20px #fb9fb4, 0 0 40px #fb9fb4,
+      0 0 60px #fb9fb4, 0 0 80px #fb9fb4, 0 0 100px #fb9fb4;
+    animation: animate 2s linear infinite;
+    animation-delay: calc(0.1s * var(--i));
+  }
+}
+@keyframes animate {
+  0% {
+    transform: scale(0);
+  }
+  50% {
+    transform: scale(1);
+  }
+  100% {
+    transform: scale(0);
+  }
+}
+
+@keyframes animateText {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.1);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+@keyframes animateBg {
+  0% {
+    filter: hue-rotate(0deg);
+  }
+  0% {
+    filter: hue-rotate(360deg);
   }
 }
