@@ -5,6 +5,9 @@
     @media (min-width: $tablet) {
         padding-bottom: 11px;
     }
+    @media screen and (min-width: $desktop) {
+        padding-top: 60px;
+    }
     &::after {
         content: '';
         position: absolute;
