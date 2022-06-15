@@ -141,7 +141,7 @@ html {
   border: 0;
   cursor: pointer;
   color: var(--accent-text-color);
-  background: var(--primari-white-color);
+  background-color: var(--primari-white-color);
   border-radius: 25px;
   width: 160px;
   height: 44px;
@@ -150,12 +150,10 @@ html {
   align-items: center;
   fill: var(--accent-text-color);
 
-  transition-property: background;
-  transition-duration: 250ms;
-  transition-timing-function: var(--timing-function);
+  transition: background-color 250ms var(--timing-function), ;
   &:hover,
   &:focus {
-    background: var(--btn-hover);
+    background-color: var(--btn-hover);
   }
   @media screen and (max-width: $max-mob) {
     display: none;
