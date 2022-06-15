@@ -330,6 +330,7 @@ html {
   color: var(--primary-text-color);
   display: flex;
   flex-direction: column;
+  animation: animateText 3s linear infinite;
   &--color {
     font-size: 48px;
     line-height: 96.5%;
@@ -443,6 +444,7 @@ html {
     padding-left: 216px;
     padding-top: 88px;
     &__img {
+      animation: animateText 3s linear infinite;
       position: absolute;
       top: 60%;
       left: 0;
@@ -745,8 +747,10 @@ opacity: 1;
 .hero-box4__img {
   position: absolute;
   bottom: 0;
+  animation: animateText 3s linear infinite;
+  
 
-  @media screen and (min-width: $tablet) {
+@media screen and (min-width: $tablet) {
     right: 32px;
   }
   @media screen and (min-width: $desktop) {
@@ -754,21 +758,37 @@ opacity: 1;
   }
 }
 .anime-container {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
+  display: none;
+
+@media screen and (min-width: 320px) {
+  display: block;
+   position: absolute;
+       top: 51%;
+    left: 59%;
+    transform: translate(-50%, -50%);
+  }
+
+  @media screen and (min-width: 468px) {
+       top: 51%;
+    left: 59%;
+  }
+
+
+  @media screen and (min-width: $tablet) {
+ top: 50%;
+    left: 53%;
+  }
   
    @media screen and (min-width: $desktop) {
-  
+   top: 49%;
     left: 60%;
   }
   & .loader {
     position: relative;
-    width: 164px;
+    width: 364px;
     height: 12px;
     @media screen and (min-width: $desktop) {
-      width: 360px;
+      width: 565px;
     }
   }
 
@@ -786,14 +806,14 @@ opacity: 1;
     position: absolute;
     top: 0;
     left: 0;
-    width: 30px;
-    height: 30px;
+    width: 40px;
+    height: 40px;
     background: #fb9fb4;
     border-radius: 50%;
     box-shadow: 0 0 10px #fb9fb4, 0 0 20px #fb9fb4, 0 0 40px #fb9fb4,
       0 0 60px #fb9fb4, 0 0 80px #fb9fb4, 0 0 100px #fb9fb4;
-    animation: animate 2s linear infinite;
-    animation-delay: calc(0.1s * var(--i));
+    animation: animate 3s linear infinite;
+    animation-delay: calc(0.2s * var(--i));
   }
 }
 @keyframes animate {
@@ -826,5 +846,16 @@ opacity: 1;
   }
   0% {
     filter: hue-rotate(360deg);
+  }
+}
+@keyframes animateText {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.2);
+  }
+  100% {
+    transform: scale(1);
   }
 }
