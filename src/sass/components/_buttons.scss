@@ -5,18 +5,19 @@
   border-color: transparent;
   background-color: var(--primari-white-color);
   color: var(--accent-text-color);
-  font-family: "DM Sans";
+  font-family: 'DM Sans';
   font-weight: 700;
   font-size: 16px;
   line-height: 21px;
   display: flex;
   justify-content: center;
   align-items: center;
+  cursor: pointer;
 
   &:hover,
   &:focus {
     background-color: var(--btn-hover);
-        box-shadow: 0px 4px 4px rgb(0 0 0 / 15%);
+    box-shadow: 0px 4px 4px rgb(0 0 0 / 15%);
   }
 }
 
