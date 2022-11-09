@@ -37,7 +37,8 @@ html {
   background-color: var(--secondary-text-color);
   z-index: 10;
   display: none;
-  transition: background-color 250ms var(--timing-function), transform 500ms var(--timing-function);
+  transition: background-color 250ms var(--timing-function),
+    transform 500ms var(--timing-function);
 
   &:hover,
   &:focus {
@@ -93,11 +94,10 @@ html {
 .btn-fix {
   padding: 0;
   &:hover,
-    &:focus {
-      background: var(--btn-hover);
-      box-shadow: 0px 4px 4px rgb(0 0 0 / 15%);
-    }
-    
+  &:focus {
+    background: var(--btn-hover);
+    box-shadow: 0px 4px 4px rgb(0 0 0 / 15%);
+  }
 }
 .header__container {
   display: flex;
@@ -157,7 +157,7 @@ html {
   align-items: center;
   fill: var(--accent-text-color);
 
-  transition: background-color 250ms var(--timing-function), ;
+  transition: all 250ms var(--timing-function);
   &:hover,
   &:focus {
     background-color: var(--btn-hover);
@@ -185,10 +185,10 @@ html {
   padding: 0;
   border: 0;
   background-color: transparent;
-  transition-property: transform background-color; 
+  transition-property: transform background-color;
   transition-duration: 500ms;
   transition-timing-function: linear;
- 
+
   @media screen and (min-width: $desktop) {
     display: none;
   }
@@ -197,7 +197,6 @@ html {
   &:focus .header__burger::before {
     width: 18px;
     background-color: rgb(188, 64, 64);
-
   }
 
   &:hover .header__burger::after,
@@ -401,24 +400,22 @@ html {
 
   &--style1 {
     background-color: var(--accent-text-color);
-    transition-property: background;
-    transition-duration: 250ms;
-    transition-timing-function: var(--timing-function);
+    transition: background-color 250ms var(--timing-function),
+      box-shadow 250ms var(--timing-function);
     &:hover,
     &:focus {
-      background: rgba(199, 19, 61, 0.663);
+      background-color: rgba(199, 19, 61, 0.663);
       box-shadow: 0px 4px 4px rgb(0 0 0 / 15%);
     }
   }
   &--style2 {
     background-color: var(--primari-white-color);
     color: var(--accent-text-color);
-    transition-property: background;
-    transition-duration: 250ms;
-    transition-timing-function: var(--timing-function);
+    transition: background-color 250ms var(--timing-function),
+      box-shadow 250ms var(--timing-function);
     &:hover,
     &:focus {
-      background: var(--btn-hover);
+      background-color: var(--btn-hover);
       box-shadow: 0px 4px 4px rgb(0 0 0 / 15%);
     }
   }
@@ -585,10 +582,10 @@ html {
   height: 100%;
   z-index: 9999;
 
-  background: rgba(0,0,0,.2);
-    transition-property: opacity,visibility;
-    transition-duration: 250ms;
-    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  background: rgba(0, 0, 0, 0.2);
+  transition-property: opacity, visibility;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
   @media screen and (min-width: $desktop) {
     display: none;
   }
@@ -598,11 +595,8 @@ html {
     opacity: 0;
     pointer-events: none;
     visibility: hidden;
-   
   }
 }
-
-
 
 .header-mobile {
   position: fixed;
@@ -620,15 +614,13 @@ html {
     width: 40%;
   }
 
-
   &__container {
     padding: 20px 20px 0 20px;
   }
 }
 .backdrop-mobile .header-mobile {
-opacity: 1;
+  opacity: 1;
 }
-
 
 .header__btn-close {
   display: block;
@@ -716,7 +708,7 @@ opacity: 1;
   &:hover,
   &:focus {
     background: var(--btn-hover);
-     box-shadow: 0px 4px 4px rgb(0 0 0 / 15%);
+    box-shadow: 0px 4px 4px rgb(0 0 0 / 15%);
   }
 }
 
@@ -749,9 +741,8 @@ opacity: 1;
   position: absolute;
   bottom: 0;
   animation: animateText 3s linear infinite;
-  
 
-@media screen and (min-width: $tablet) {
+  @media screen and (min-width: $tablet) {
     right: 32px;
   }
   @media screen and (min-width: $desktop) {
@@ -761,27 +752,26 @@ opacity: 1;
 .anime-container {
   display: none;
 
-@media screen and (min-width: 320px) {
-  display: block;
-   position: absolute;
-       top: 51%;
+  @media screen and (min-width: 320px) {
+    display: block;
+    position: absolute;
+    top: 51%;
     left: 59%;
     transform: translate(-50%, -50%);
   }
 
   @media screen and (min-width: 468px) {
-       top: 51%;
+    top: 51%;
     left: 59%;
   }
 
-
   @media screen and (min-width: $tablet) {
- top: 50%;
+    top: 50%;
     left: 53%;
   }
-  
-   @media screen and (min-width: $desktop) {
-   top: 49%;
+
+  @media screen and (min-width: $desktop) {
+    top: 49%;
     left: 60%;
   }
   & .loader {
